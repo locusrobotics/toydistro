@@ -1,0 +1,72 @@
+architectures:
+  - amd64
+
+keyservers:
+  - keyserver.ubuntu.com
+  - pgp.mit.edu
+  - ha.pool.sks-keyservers.net
+
+origin: tailor.locusbots.io
+
+mirrors:
+  ros:
+      url: http://repositories.ros.org/ubuntu/main/
+      distributions:
+        - {{ distribution }}
+      components:
+        - main
+      keys:
+        - 5523BAEEB01FA116
+      filters:
+        - Name (% python*-catkin-pkg)
+        - Name (% python*-catkin-tools)
+        - Name (% python*-rosdep)
+        - Name (% python*-vcstool)
+        - Name (% *vtk6* )
+        - Name (% ceres* ) | Name (% libceres* )
+        - Name (% python-pyside* ) | Name (% libpyside* ) | Name (% pyside* )
+        - Name (% libshiboken* ) | Name (% shiboken* )
+  ros2:
+      url: http://repo.ros2.org/ubuntu/main/
+      distributions:
+        - {{ distribution }}
+      components:
+        - main
+      keys:
+        - 5523BAEEB01FA116
+      filters:
+        - Name (% libopensplice* )
+        - Name (% rti-connext-dds* )
+        - Name (% python3-colcon* )
+  gazebo:
+      url: http://packages.osrfoundation.org/gazebo/ubuntu-stable
+      distributions:
+        - {{ distribution }}
+      components:
+        - main
+      keys:
+        - 67170598AF249743
+      filters:
+        - Name (% gazebo9* )
+        - Name (% libgazebo9* )
+{% if distribution == 'xenial' %}
+  opencv:
+      url: http://ppa.launchpad.net/lkoppel/opencv/ubuntu
+      distributions:
+        - {{ distribution }}
+      components:
+        - main
+      keys:
+        - 98749F984560FB8A
+      filters:
+        - Name (% opencv* )
+        - Name (% libopencv* )
+  parallel-dpkg:
+      url: http://ppa.launchpad.net/mikepurvis/dpkg/ubuntu
+      distributions:
+        - {{ distribution }}
+      components:
+        - main
+      keys:
+        - EBDDE2A9100C5795
+{% endif %}
