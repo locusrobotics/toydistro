@@ -6,8 +6,6 @@ keyservers:
   - pgp.mit.edu
   - ha.pool.sks-keyservers.net
 
-origin: tailor.locusbots.io
-
 mirrors:
   ros:
       url: http://repositories.ros.org/ubuntu/main/
