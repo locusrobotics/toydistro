@@ -8,7 +8,7 @@ flavours:
           - roscpp
           - rospy
       ros2:
-        root_packages: 
+        root_packages:
           - rclcpp
           - rclpy
 
@@ -35,8 +35,6 @@ common:
     - cmake
     - debhelper
     - fakeroot
-  vendor_environments:
-    - /opt/rti.com/rti_connext_dds-5.3.1/resource/scripts/rtisetenv_x64Linux3gcc5.4.0.bash
   distributions:
     ros1:
       compat_catkin_tools: True
