@@ -31,4 +31,6 @@ mirrors:
       keys:
         - 5523BAEEB01FA116
       filters:
+        - Name (% libopensplice* )
+        - Name (% rti-connext-dds* )
         - Name (% python3-colcon* )
