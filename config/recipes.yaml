@@ -1,6 +1,6 @@
 ---
 flavours:
-  test:
+  dev:
     description: Contains the entire Locus ROS distribution.
     distributions:
       ros1:
