@@ -1,8 +1,8 @@
 #!/usr/bin/env groovy
 versions = [
-  tailor_meta: "apt-fix-refactor",
-  tailor_distro: "apt-fix-refactor",
-  tailor_image: "apt-fix-refactor",
+  tailor_meta: "0.1.0",
+  tailor_distro: "0.1.0",
+  tailor_image: "0.1.0",
 ]
 
 library('tailor-meta@' + versions['tailor_meta'])_
