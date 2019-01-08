@@ -1,8 +1,8 @@
 #!/usr/bin/env groovy
 versions = [
   tailor_meta: "master",
-  tailor_distro: "0.1.1",
-  tailor_image: "0.1.0",
+  tailor_distro: "master",
+  tailor_image: "master",
 ]
 
 library('tailor-meta@' + versions['tailor_meta'])_
