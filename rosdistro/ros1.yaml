@@ -125,6 +125,19 @@ repositories:
       url: https://github.com/ros/message_runtime.git
       version: groovy-devel
     status_description: Pinned 0 commits behind groovy-devel on 2018-09-07 01:13:30.514925
+  metapackages:
+    release:
+      packages:
+      - ros_core
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros/metapackages.git
+      version: 1.4.1
+    source:
+      type: git
+      url: https://github.com/ros/metapackages.git
+      version: melodic-devel
+    status_description: Pinned 2 commits behind melodic-devel on 2019-01-14 12:41:21.990283
   ros:
     release:
       tags:
@@ -136,28 +149,89 @@ repositories:
       url: https://github.com/ros/ros.git
       version: kinetic-devel
     status_description: Pinned 7 commits behind kinetic-devel on 2018-09-07 01:15:02.616733
+  class_loader:
+    release:
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros/class_loader.git
+      version: 0.4.1
+    source:
+      type: git
+      url: https://github.com/ros/class_loader.git
+      version: melodic-devel
+    status_description: Pinned 2 commits behind melodic-devel on 2019-01-14 12:40:43.848924
+  pluginlib:
+    release:
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros/pluginlib.git
+      version: 1.12.1
+    source:
+      type: git
+      url: https://github.com/ros/pluginlib.git
+      version: melodic-devel
+    status_description: Pinned 4 commits behind melodic-devel on 2019-01-14 12:42:36.833163
+  rosbag_migration_rule:
+    release:
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros/rosbag_migration_rule.git
+      version: 1.0.0
+    status_description: Pinned 0 commits behind master on 2018-07-05 15:51:16.142621
+  common_msgs:
+    release:
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros/common_msgs.git
+      version: 1.12.7
+    source:
+      type: git
+      url: https://github.com/ros/common_msgs.git
+      version: jade-devel
+    status_description: Pinned 1 commits behind jade-devel on 2019-01-14 12:40:45.583006
+  rosconsole_bridge:
+    release:
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros/rosconsole_bridge.git
+      version: 0.5.2
+    source:
+      type: git
+      url: https://github.com/ros/rosconsole_bridge.git
+      version: kinetic-devel
+    status_description: Pinned 0 commits behind kinetic-devel on 2019-01-14 12:42:53.706645
   ros_comm:
     release:
       packages:
-      - rosbag_msgs
+      - message_filters
+      - ros_comm
+      - rosbag_storage
+      - rosbag
       - roscpp
       - rosgraph
       - roslaunch
       - rosmaster
-      - rosparam
       - rosout
+      - rosmsg
+      - rosnode
+      - rosparam
       - rospy
       - rostest
+      - roslz4
+      - rosservice
+      - rostopic
+      - roswtf
+      - topic_tools
       - xmlrpcpp
       tags:
         release: '{{ version }}'
-      url: https://github.com/locusrobotics/ros_comm.git
-      version: locus-patches
+      url: https://github.com/ros/ros_comm.git
+      version: 1.14.3
     source:
       type: git
-      url: https://github.com/locusrobotics/ros_comm.git
-      version: locus-patches
-    status_description: melodic-devel as of 2018-10-12, plus https://github.com/ros/ros_comm/pull/1414
+      url: https://github.com/ros/ros_comm.git
+      version: melodic-devel
+    status_description: Pinned 26 commits behind melodic-devel on 2019-01-17 13:18:13.297632
   ros_comm_msgs:
     release:
       tags:
@@ -215,8 +289,6 @@ repositories:
     status_description: Pinned 1 commits behind master on 2019-01-17 12:51:53.966297
   roslisp:
     release:
-      packages:
-      - common-lisp
       tags:
         release: '{{ version }}'
       url: https://github.com/ros/roslisp.git
