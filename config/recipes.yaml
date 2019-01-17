@@ -1,16 +1,14 @@
 ---
 flavours:
   dev:
-    description: Contains the entire Locus ROS distribution.
+    description: default flavour
     distributions:
       ros1:
-        root_packages:
-          - roscpp
-          - rospy
-      ros2:
-        root_packages:
-          - rclcpp
-          - rclpy
+        root_packages: []
+      # ros2:
+      #   root_packages:
+      #     - rclcpp
+      #     - rclpy
 
 os:
   ubuntu:
@@ -40,9 +38,9 @@ common:
       upstream:
         name: melodic
         url: https://raw.githubusercontent.com/ros/rosdistro/master/index.yaml
-    ros2:
-      upstream:
-        name: bouncy
-        url: https://raw.githubusercontent.com/ros2/rosdistro/master/index.yaml
-      underlays:
-        - ros1
+    # ros2:
+    #   upstream:
+    #     name: bouncy
+    #     url: https://raw.githubusercontent.com/ros2/rosdistro/master/index.yaml
+    #   underlays:
+    #     - ros1
