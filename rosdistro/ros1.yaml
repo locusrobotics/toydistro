@@ -142,6 +142,10 @@ repositories:
       - rosbag_msgs
       - roscpp
       - rosgraph
+      - roslaunch
+      - rosmaster
+      - rosparam
+      - rosout
       - rospy
       - rostest
       - xmlrpcpp
