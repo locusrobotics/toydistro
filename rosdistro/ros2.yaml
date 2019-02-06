@@ -318,11 +318,6 @@ repositories:
       url: https://github.com/ros2/rmw_opensplice.git
       version: master
     status_description: Pinned 2 commits behind master on 2018-09-06 14:22:08.078059
-  ros1_bridge:
-    source:
-      type: git
-      url: https://github.com/locusrobotics/ros1_bridge.git
-      version: locus-changes
   ros2cli:
     release:
       tags:
@@ -488,11 +483,6 @@ repositories:
     source:
       type: git
       url: https://github.com/ros2/variants.git
-      version: devel
-  yammer:
-    source:
-      type: git
-      url: https://github.com/locusrobotics/yammer.git
       version: devel
 type: distribution
 version: 2
