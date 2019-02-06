@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 versions = [
-  tailor_meta: "RST-1658_Update-repo-settings-on-build",
+  tailor_meta: "master",
   tailor_distro: "master",
   tailor_image: "master",
 ]
