@@ -1,10 +1,10 @@
 ---
 flavours:
-  dev:
+  test:
     description: default flavour
     distributions:
       ros1:
-        root_packages: []
+        root_packages: test_meta
       # ros2:
       #   root_packages:
       #     - rclcpp
@@ -16,7 +16,8 @@ os:
     - bionic
 
 common:
-  organization: locusrobotics
+  organization: toydistro
+  testing_flavour: test
   apt_repo: s3://locus-toydistro
   docker_registry: https://084758475884.dkr.ecr.us-east-1.amazonaws.com/locus-toydistro
   # C++14 is the default, but may be overridden on a package-by-package basis.
