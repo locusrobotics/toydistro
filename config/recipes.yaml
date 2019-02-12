@@ -13,7 +13,7 @@ flavours:
 
 os:
   ubuntu:
-    - xenial
+#    - xenial
     - bionic
 
 common:
