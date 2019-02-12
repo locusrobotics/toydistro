@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 versions = [
-  tailor_meta: "RST-1600_Add-invalidation-for-cloudfront",
+  tailor_meta: "master",
   tailor_distro: "master",
   tailor_image: "master",
 ]
