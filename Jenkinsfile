@@ -1,8 +1,8 @@
 #!/usr/bin/env groovy
 versions = [
-  tailor_meta: "test-rosdep",
-  tailor_distro: "master",
-  tailor_image: "test-rosdep",
+  tailor_meta: "master",
+  tailor_distro: "RST-1600_Add-invalidation-for-cloudfront",
+  tailor_image: "master",
 ]
 
 library('tailor-meta@' + versions['tailor_meta'])_
