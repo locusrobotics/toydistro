@@ -4,7 +4,8 @@ flavours:
     description: default flavour
     distributions:
       ros1:
-        root_packages: test_meta
+        root_packages:
+          - test_meta
       # ros2:
       #   root_packages:
       #     - rclcpp
