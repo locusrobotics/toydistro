@@ -2,7 +2,7 @@
 versions = [
   tailor_meta: "master",
   tailor_distro: "master",
-  tailor_image: "RST-1297_Create-images-for-devs",
+  tailor_image: "master",
 ]
 
 library('tailor-meta@' + versions['tailor_meta'])_
