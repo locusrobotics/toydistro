@@ -16,3 +16,6 @@ images:
     package: locus_tools
     provision_file: bare_metal.yaml
     description: Image for the Locus robots.
+    # TODO(gservin): Point to our stored base image
+    base_image_link: https://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd64-disk1.img
+    base_image_checksum: c164c962d138cea102a5f3892592c68a77c61696
