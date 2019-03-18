@@ -103,7 +103,7 @@ repositories:
       test_commits: true
       type: git
       url: https://github.com/locusrobotics/locus_tools.git
-      version: RST-1786_Add-bare-metal-image-creation-CI
+      version: devel
   message_generation:
     release:
       tags:
