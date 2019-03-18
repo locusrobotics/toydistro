@@ -1,16 +1,16 @@
 images:
-  test:
-    build_type: docker
-    package: tailor-image
-    # TODO(gservin): Use packer + ansible instead of Dockerfile
-    provision_file: tailor-image/environment/tests/Dockerfile
-    description: Image for running tests on tailor.
-  dev:
-    build_type: docker
-    package: tailor-image
-    # TODO(gservin): Use packer + ansible instead of Dockerfile
-    provision_file: tailor-image/environment/devs/Dockerfile
-    description: Image for running tests on developer's computers.
+#  test:
+#    build_type: docker
+#    package: tailor-image
+#    # TODO(gservin): Use packer + ansible instead of Dockerfile
+#    provision_file: tailor-image/environment/tests/Dockerfile
+#    description: Image for running tests on tailor.
+#  dev:
+#    build_type: docker
+#    package: tailor-image
+#    # TODO(gservin): Use packer + ansible instead of Dockerfile
+#    provision_file: tailor-image/environment/devs/Dockerfile
+#    description: Image for running tests on developer's computers.
   bot:
     build_type: bare_metal
     package: locus_tools
