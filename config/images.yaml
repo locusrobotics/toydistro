@@ -13,9 +13,8 @@ images:
 #    description: Image for running tests on developer's computers.
   bot:
     build_type: bare_metal
-    package: locus_tools
+    package: locus_ansible
     provision_file: bare_metal.yaml
     description: Image for the Locus robots.
-    # TODO(gservin): Point to our stored base image
-    base_image_link: https://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd64-disk1.img
-    base_image_checksum: c164c962d138cea102a5f3892592c68a77c61696
+    base_image: xenial-server-cloudimg-amd64-disk1.img
+    base_image_checksum: 1976691c6eb1995b0328ee85dba0f1d9ab43b579

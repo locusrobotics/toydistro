@@ -1,8 +1,8 @@
 #!/usr/bin/env groovy
 versions = [
   tailor_meta: "master",
-  tailor_distro: "master",
-  tailor_image: "RST-1786_Add-bare-metal-image-creation-CI",
+  tailor_distro: "test-image-creation",
+  tailor_image: "test-image-creation",
 ]
 
 library('tailor-meta@' + versions['tailor_meta'])_
