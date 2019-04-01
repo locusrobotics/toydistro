@@ -1,20 +1,20 @@
 images:
-#  test:
-#    build_type: docker
-#    package: tailor-image
-#    # TODO(gservin): Use packer + ansible instead of Dockerfile
-#    provision_file: tailor-image/environment/tests/Dockerfile
-#    description: Image for running tests on tailor.
+  test:
+    build_type: docker
+    package: locus_ansible
+    # TODO(gservin): Use packer + ansible instead of Dockerfile
+    provision_file: tests/Dockerfile
+    description: Image for running tests on tailor.
 #  dev:
 #    build_type: docker
 #    package: tailor-image
 #    # TODO(gservin): Use packer + ansible instead of Dockerfile
 #    provision_file: tailor-image/environment/devs/Dockerfile
 #    description: Image for running tests on developer's computers.
-  bot:
-    build_type: bare_metal
-    package: locus_ansible
-    provision_file: bare_metal.yaml
-    description: Image for the Locus robots.
-    base_image: xenial-server-cloudimg-amd64-disk1.img
-    base_image_checksum: 1976691c6eb1995b0328ee85dba0f1d9ab43b579
+#  bot:
+#    build_type: bare_metal
+#    package: locus_ansible
+#    provision_file: bare_metal.yaml
+#    description: Image for the Locus robots.
+#    base_image: xenial-server-cloudimg-amd64-disk1.img
+#    base_image_checksum: 1976691c6eb1995b0328ee85dba0f1d9ab43b579

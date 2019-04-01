@@ -98,6 +98,11 @@ repositories:
       url: https://github.com/ros/genpy.git
       version: kinetic-devel
     status_description: Pinned 2 commits behind kinetic-devel on 2018-09-07 01:13:50.253599
+  locus_tools:
+    source:
+      type: git
+      url: https://github.com/locusrobotics/locus_tools.git
+      version: RST-1750_Use-packer-ansble-to-build-test-dev-images
   message_generation:
     release:
       tags:
