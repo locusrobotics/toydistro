@@ -2,7 +2,7 @@
 versions = [
   tailor_meta: "master",
   tailor_distro: "test-image-creation",
-  tailor_image: "RST-1750_Use-packer-ansble-to-build-test-dev-images",
+  tailor_image: "master",
 ]
 
 library('tailor-meta@' + versions['tailor_meta'])_
