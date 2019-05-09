@@ -1,14 +1,14 @@
 images:
-  test:
-    build_type: docker
-    package: locus_ansible
-    provision_file: tailor_tests.yaml
-    description: Image for running tests on tailor.
-  dev:
-    build_type: docker
-    package: locus_ansible
-    provision_file: developer_images.yaml
-    description: Image for running tests on developer's computers.
+#  test:
+#    build_type: docker
+#    package: locus_ansible
+#    provision_file: tailor_tests.yaml
+#    description: Image for running tests on tailor.
+#  dev:
+#    build_type: docker
+#    package: locus_ansible
+#    provision_file: developer_images.yaml
+#    description: Image for running tests on developer's computers.
   bot:
     build_type: bare_metal
     package: locus_ansible
