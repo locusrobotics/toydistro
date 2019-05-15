@@ -102,7 +102,7 @@ repositories:
     source:
       type: git
       url: https://github.com/locusrobotics/locus_tools.git
-      version: RST-1897_Use-qemu-chroot-to-improve-speed-bare-metal-images
+      version: test-fix-cpus
   message_generation:
     release:
       tags:
