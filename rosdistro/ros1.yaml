@@ -14,13 +14,24 @@ repositories:
       type: git
       url: https://github.com/ros/catkin.git
       version: kinetic-devel
-    status_description: Include unreleased env hook install patch
+    status_description: Keep catkin pinned pending catkin-tools debacle (https://github.com/catkin/catkin_tools/issues/538)
   catkin_virtualenv:
     source:
       type: git
       url: https://github.com/locusrobotics/catkin_virtualenv.git
       version: devel
-    status_description: Pinned 0 commits behind devel on 2019-01-17 13:02:27.086816
+    status_description: patch out exec depends requirements globbing
+  class_loader:
+    release:
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros/class_loader.git
+      version: 0.4.1
+    source:
+      type: git
+      url: https://github.com/ros/class_loader.git
+      version: melodic-devel
+    status_description: Pinned 5 commits behind melodic-devel on 2019-03-18 14:00:39.553639
   cmake_modules:
     release:
       tags:
@@ -31,18 +42,29 @@ repositories:
       type: git
       url: https://github.com/ros/cmake_modules.git
       version: 0.4-devel
-    status_description: Pinned 1 commits behind 0.4-devel on 2018-09-07 01:15:16.599365
+    status_description: Pinned 1 commits behind 0.4-devel on 2019-03-18 14:00:40.116946
+  common_msgs:
+    release:
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros/common_msgs.git
+      version: 1.12.7
+    source:
+      type: git
+      url: https://github.com/ros/common_msgs.git
+      version: jade-devel
+    status_description: Pinned 1 commits behind jade-devel on 2019-03-18 14:00:45.414013
   gencpp:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros/gencpp.git
-      version: 0.6.0
+      version: 0.6.2
     source:
       type: git
       url: https://github.com/ros/gencpp.git
       version: indigo-devel
-    status_description: Pinned 0 commits behind indigo-devel on 2018-09-07 01:12:57.873197
+    status_description: Pinned 0 commits behind indigo-devel on 2019-03-18 14:01:02.697545
   geneus:
     release:
       tags:
@@ -53,7 +75,7 @@ repositories:
       type: git
       url: https://github.com/jsk-ros-pkg/geneus.git
       version: master
-    status_description: Pinned 2 commits behind master on 2018-09-07 01:13:19.463026
+    status_description: Pinned 7 commits behind master on 2019-03-18 14:01:20.821012
   genlisp:
     release:
       tags:
@@ -64,18 +86,18 @@ repositories:
       type: git
       url: https://github.com/ros/genlisp.git
       version: groovy-devel
-    status_description: Pinned 0 commits behind groovy-devel on 2018-09-07 01:13:40.583017
+    status_description: Pinned 0 commits behind groovy-devel on 2019-03-18 14:01:21.330194
   genmsg:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros/genmsg.git
-      version: 0.5.11
+      version: 0.5.12
     source:
       type: git
       url: https://github.com/ros/genmsg.git
       version: indigo-devel
-    status_description: Pinned 1 commits behind indigo-devel on 2018-09-07 01:15:04.536307
+    status_description: Pinned 0 commits behind indigo-devel on 2019-03-18 14:01:25.398817
   gennodejs:
     release:
       tags:
@@ -86,18 +108,18 @@ repositories:
       type: git
       url: https://github.com/RethinkRobotics-opensource/gennodejs.git
       version: kinetic-devel
-    status_description: Pinned 0 commits behind kinetic-devel on 2018-09-07 01:15:09.510964
+    status_description: Pinned 0 commits behind kinetic-devel on 2019-03-18 14:01:25.874934
   genpy:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros/genpy.git
-      version: 0.6.7
+      version: 0.6.8
     source:
       type: git
       url: https://github.com/ros/genpy.git
       version: kinetic-devel
-    status_description: Pinned 2 commits behind kinetic-devel on 2018-09-07 01:13:50.253599
+    status_description: Pinned 0 commits behind kinetic-devel on 2019-03-18 14:01:27.381710
   message_generation:
     release:
       tags:
@@ -108,7 +130,7 @@ repositories:
       type: git
       url: https://github.com/ros/message_generation.git
       version: kinetic-devel
-    status_description: Pinned 0 commits behind kinetic-devel on 2018-09-07 01:14:49.044434
+    status_description: Pinned 0 commits behind kinetic-devel on 2019-03-18 14:02:46.642780
   message_runtime:
     release:
       tags:
@@ -119,7 +141,7 @@ repositories:
       type: git
       url: https://github.com/ros/message_runtime.git
       version: groovy-devel
-    status_description: Pinned 0 commits behind groovy-devel on 2018-09-07 01:13:30.514925
+    status_description: Pinned 0 commits behind groovy-devel on 2019-03-18 14:02:47.116413
   metapackages:
     release:
       packages:
@@ -132,29 +154,7 @@ repositories:
       type: git
       url: https://github.com/ros/metapackages.git
       version: melodic-devel
-    status_description: Pinned 2 commits behind melodic-devel on 2019-01-14 12:41:21.990283
-  ros:
-    release:
-      tags:
-        release: '{{ version }}'
-      url: https://github.com/ros/ros.git
-      version: 1.14.4
-    source:
-      type: git
-      url: https://github.com/ros/ros.git
-      version: kinetic-devel
-    status_description: Pinned 7 commits behind kinetic-devel on 2018-09-07 01:15:02.616733
-  class_loader:
-    release:
-      tags:
-        release: '{{ version }}'
-      url: https://github.com/ros/class_loader.git
-      version: 0.4.1
-    source:
-      type: git
-      url: https://github.com/ros/class_loader.git
-      version: melodic-devel
-    status_description: Pinned 2 commits behind melodic-devel on 2019-01-14 12:40:43.848924
+    status_description: Pinned 2 commits behind melodic-devel on 2019-03-18 14:02:48.357459
   pluginlib:
     release:
       tags:
@@ -165,79 +165,57 @@ repositories:
       type: git
       url: https://github.com/ros/pluginlib.git
       version: melodic-devel
-    status_description: Pinned 4 commits behind melodic-devel on 2019-01-14 12:42:36.833163
-  rosbag_migration_rule:
+    status_description: Pinned 4 commits behind melodic-devel on 2019-03-18 14:04:02.523688
+  ros:
     release:
       tags:
         release: '{{ version }}'
-      url: https://github.com/ros/rosbag_migration_rule.git
-      version: 1.0.0
-    status_description: Pinned 0 commits behind master on 2018-07-05 15:51:16.142621
-  common_msgs:
-    release:
-      tags:
-        release: '{{ version }}'
-      url: https://github.com/ros/common_msgs.git
-      version: 1.12.7
+      url: https://github.com/ros/ros.git
+      version: 1.14.6
     source:
       type: git
-      url: https://github.com/ros/common_msgs.git
-      version: jade-devel
-    status_description: Pinned 1 commits behind jade-devel on 2019-01-14 12:40:45.583006
-  rosconsole_bridge:
-    release:
-      tags:
-        release: '{{ version }}'
-      url: https://github.com/ros/rosconsole_bridge.git
-      version: 0.5.2
-    source:
-      type: git
-      url: https://github.com/ros/rosconsole_bridge.git
+      url: https://github.com/ros/ros.git
       version: kinetic-devel
-    status_description: Pinned 0 commits behind kinetic-devel on 2019-01-14 12:42:53.706645
+    status_description: Pinned 0 commits behind kinetic-devel on 2019-03-18 14:04:18.252518
   ros_comm:
     release:
       packages:
       - message_filters
       - ros_comm
-      - rosbag_storage
       - rosbag
+      - rosbag_msgs
+      - rosbag_storage
       - roscpp
       - rosgraph
       - roslaunch
+      - roslz4
       - rosmaster
-      - rosout
       - rosmsg
       - rosnode
+      - rosout
       - rosparam
       - rospy
-      - rostest
-      - roslz4
       - rosservice
+      - rostest
       - rostopic
       - roswtf
       - topic_tools
       - xmlrpcpp
       tags:
         release: '{{ version }}'
-      url: https://github.com/ros/ros_comm.git
-      version: 1.14.3
+      url: https://github.com/locusrobotics/ros_comm.git
+      version: locus-melodic-devel
     source:
       type: git
-      url: https://github.com/ros/ros_comm.git
-      version: melodic-devel
-    status_description: Pinned 26 commits behind melodic-devel on 2019-01-17 13:18:13.297632
+      url: https://github.com/locusrobotics/ros_comm.git
+      version: locus-melodic-devel
+    status_description: melodic-devel as of 2019-01-14, plus https://github.com/ros/ros_comm/pull/1414
   ros_comm_msgs:
-    release:
-      tags:
-        release: '{{ version }}'
-      url: https://github.com/ros/ros_comm_msgs.git
-      version: 1.11.2
     source:
       type: git
-      url: https://github.com/ros/ros_comm_msgs.git
+      url: https://github.com/locusrobotics/ros_comm_msgs.git
       version: indigo-devel
-    status_description: Pinned 0 commits behind indigo-devel on 2019-01-17 12:49:20.381514
+    status_description: TODO(pbovbel) unfork
   ros_environment:
     release:
       tags:
@@ -248,29 +226,47 @@ repositories:
       type: git
       url: https://github.com/ros/ros_environment.git
       version: melodic
-    status_description: Pinned 2 commits behind melodic on 2018-09-07 01:14:34.319634
+    status_description: Pinned 5 commits behind melodic on 2019-03-18 14:04:23.719454
+  rosbag_migration_rule:
+    release:
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros/rosbag_migration_rule.git
+      version: 1.0.0
+    status_description: Pinned 0 commits behind master on 2018-07-05 15:51:16.142621
   rosconsole:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros/rosconsole.git
-      version: 1.13.7
+      version: 1.13.10
     source:
       type: git
       url: https://github.com/ros/rosconsole.git
       version: melodic-devel
-    status_description: Pinned 2 commits behind melodic-devel on 2018-09-07 01:13:39.940745
+    status_description: Pinned 0 commits behind melodic-devel on 2019-03-18 14:04:28.772638
+  rosconsole_bridge:
+    release:
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros/rosconsole_bridge.git
+      version: 0.5.3
+    source:
+      type: git
+      url: https://github.com/ros/rosconsole_bridge.git
+      version: kinetic-devel
+    status_description: Pinned 0 commits behind kinetic-devel on 2019-03-18 14:04:30.361052
   roscpp_core:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros/roscpp_core.git
-      version: 0.6.11
+      version: 0.6.12
     source:
       type: git
       url: https://github.com/ros/roscpp_core.git
       version: kinetic-devel
-    status_description: Pinned 2 commits behind kinetic-devel on 2018-09-07 01:13:34.490742
+    status_description: Pinned 0 commits behind kinetic-devel on 2019-03-18 14:04:31.076633
   roslint:
     release:
       tags:
@@ -281,40 +277,40 @@ repositories:
       type: git
       url: https://github.com/ros/roslint.git
       version: master
-    status_description: Pinned 1 commits behind master on 2019-01-17 12:51:53.966297
+    status_description: Pinned 1 commits behind master on 2019-03-18 14:04:31.602644
   roslisp:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros/roslisp.git
-      version: 1.9.21
+      version: 1.9.22
     source:
       type: git
       url: https://github.com/ros/roslisp.git
       version: master
-    status_description: Pinned 0 commits behind master on 2018-09-07 01:13:01.739567
+    status_description: Pinned 0 commits behind master on 2019-03-18 14:04:32.094682
   rospack:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros/rospack.git
-      version: 2.5.2
+      version: 2.5.3
     source:
       type: git
       url: https://github.com/ros/rospack.git
       version: lunar-devel
-    status_description: Pinned 0 commits behind lunar-devel on 2018-09-07 01:13:26.640293
+    status_description: Pinned 0 commits behind lunar-devel on 2019-03-18 14:04:33.736107
   std_msgs:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros/std_msgs.git
-      version: 0.5.11
+      version: 0.5.12
     source:
       type: git
       url: https://github.com/ros/std_msgs.git
       version: groovy-devel
-    status_description: Pinned 0 commits behind groovy-devel on 2018-09-07 01:13:44.184298
+    status_description: Pinned 0 commits behind groovy-devel on 2019-03-18 14:04:49.634503
   test_meta:
     source:
       test_commits: true

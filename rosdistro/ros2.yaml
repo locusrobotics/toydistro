@@ -9,12 +9,12 @@ repositories:
       tags:
         release: '{{ version }}'
       url: https://github.com/ament/ament_cmake.git
-      version: 0.5.1
+      version: 0.6.0
     source:
       type: git
       url: https://github.com/ament/ament_cmake.git
       version: master
-    status_description: Pinned 2 commits behind master on 2018-09-06 14:22:13.007623
+    status_description: Pinned 3 commits behind master on 2019-03-18 14:05:33.708849
   ament_cmake_ros:
     release:
       tags:
@@ -25,7 +25,7 @@ repositories:
       type: git
       url: https://github.com/ros2/ament_cmake_ros.git
       version: master
-    status_description: Pinned 0 commits behind master on 2018-09-06 14:22:13.949088
+    status_description: Pinned 0 commits behind master on 2019-03-18 14:05:34.196510
   ament_index:
     release:
       tags:
@@ -36,51 +36,51 @@ repositories:
       type: git
       url: https://github.com/ament/ament_index.git
       version: master
-    status_description: Pinned 0 commits behind master on 2018-09-06 14:22:19.976681
+    status_description: Pinned 0 commits behind master on 2019-03-18 14:05:34.597433
   ament_lint:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ament/ament_lint.git
-      version: 0.5.2
+      version: 0.6.3
     source:
       type: git
       url: https://github.com/ament/ament_lint.git
       version: master
-    status_description: Pinned 5 commits behind master on 2018-09-06 14:22:06.013988
+    status_description: Pinned 6 commits behind master on 2019-03-18 14:05:37.174946
   ament_package:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ament/ament_package.git
-      version: 0.5.2
+      version: 0.6.0
     source:
       type: git
       url: https://github.com/ament/ament_package.git
       version: master
-    status_description: Pinned 0 commits behind master on 2018-09-06 14:22:16.244418
+    status_description: Pinned 0 commits behind master on 2019-03-18 14:05:37.556704
   class_loader:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros/class_loader.git
-      version: 1.1.0
+      version: 1.2.0
     source:
       type: git
       url: https://github.com/ros/class_loader.git
       version: ros2
-    status_description: Pinned 2 commits behind ros2 on 2018-09-06 14:22:12.404539
+    status_description: Pinned 0 commits behind ros2 on 2019-03-18 14:05:38.105311
   common_interfaces:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/common_interfaces.git
-      version: 0.5.1
+      version: 0.6.1
     source:
       type: git
       url: https://github.com/ros2/common_interfaces.git
       version: master
-    status_description: Pinned 1 commits behind master on 2018-09-06 14:22:25.104589
+    status_description: Pinned 2 commits behind master on 2019-03-18 14:05:38.712618
   console_bridge:
     release:
       tags:
@@ -97,7 +97,7 @@ repositories:
       tags:
         release: release/{{ upstream }}/{{ package }}/{{ version }}
       url: https://github.com/ros2-gbp/fastcdr-release.git
-      version: 1.0.7-0
+      version: 1.0.8-0
     source:
       type: git
       url: https://github.com/eProsima/Fast-CDR.git
@@ -108,7 +108,7 @@ repositories:
       tags:
         release: release/{{ upstream }}/{{ package }}/{{ version }}
       url: https://github.com/ros2-gbp/fastrtps-release.git
-      version: 1.6.0-5
+      version: 1.7.2-0
     source:
       type: git
       url: https://github.com/eProsima/Fast-RTPS.git
@@ -125,12 +125,12 @@ repositories:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/launch.git
-      version: 0.6.0
+      version: 0.7.4
     source:
       type: git
       url: https://github.com/ros2/launch.git
       version: master
-    status_description: Pinned 8 commits behind master on 2018-09-06 14:22:18.159278
+    status_description: Pinned 19 commits behind master on 2019-03-18 14:05:46.767247
   libyaml_vendor:
     release:
       tags:
@@ -141,40 +141,40 @@ repositories:
       type: git
       url: https://github.com/ros2/libyaml_vendor.git
       version: master
-    status_description: Pinned 0 commits behind master on 2018-09-06 14:22:27.104567
+    status_description: Pinned 0 commits behind master on 2019-03-18 14:05:47.331073
   osrf_pycommon:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/osrf/osrf_pycommon.git
-      version: 0.1.5
+      version: 0.1.6
     source:
       type: git
       url: https://github.com/osrf/osrf_pycommon.git
       version: master
-    status_description: Pinned 1 commits behind master on 2018-09-06 14:22:35.267961
+    status_description: Pinned 1 commits behind master on 2019-03-18 14:05:48.419573
   osrf_testing_tools_cpp:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/osrf/osrf_testing_tools_cpp.git
-      version: 1.0.0
+      version: 1.1.0
     source:
       type: git
       url: https://github.com/osrf/osrf_testing_tools_cpp.git
       version: master
-    status_description: Pinned 2 commits behind master on 2018-09-06 14:22:24.542143
+    status_description: Pinned 2 commits behind master on 2019-03-18 14:05:49.686153
   pluginlib:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros/pluginlib.git
-      version: 2.1.1
+      version: 2.2.1
     source:
       type: git
       url: https://github.com/ros/pluginlib.git
       version: ros2
-    status_description: Pinned 1 commits behind ros2 on 2018-09-06 14:22:09.326058
+    status_description: Pinned 3 commits behind ros2 on 2019-03-18 14:05:50.901236
   poco_vendor:
     release:
       tags:
@@ -185,73 +185,73 @@ repositories:
       type: git
       url: https://github.com/ros2/poco_vendor.git
       version: master
-    status_description: Pinned 0 commits behind master on 2018-09-06 14:22:23.936059
+    status_description: Pinned 1 commits behind master on 2019-03-18 14:05:51.423527
   rcl:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/rcl.git
-      version: 0.5.0
+      version: 0.6.5
     source:
       type: git
       url: https://github.com/ros2/rcl.git
-      version: master
-    status_description: Pinned 18 commits behind master on 2018-09-06 14:22:30.364708
+      version: crystal
+    status_description: Pinned 0 commits behind crystal on 2019-03-18 14:05:51.780410
   rcl_interfaces:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/rcl_interfaces.git
-      version: 0.5.0
+      version: 0.6.2
     source:
       type: git
       url: https://github.com/ros2/rcl_interfaces.git
       version: master
-    status_description: Pinned 1 commits behind master on 2018-09-06 14:22:06.596485
+    status_description: Pinned 5 commits behind master on 2019-03-18 14:05:55.155179
   rclcpp:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/rclcpp.git
-      version: 0.5.1
+      version: 0.6.4
     source:
       type: git
       url: https://github.com/ros2/rclcpp.git
-      version: master
-    status_description: Pinned 20 commits behind master on 2018-09-06 14:22:04.322804
+      version: crystal
+    status_description: Pinned 0 commits behind crystal on 2019-03-18 14:05:56.006779
   rclpy:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/rclpy.git
-      version: 0.5.3
+      version: 0.6.4
     source:
       type: git
       url: https://github.com/ros2/rclpy.git
-      version: master
-    status_description: Pinned 19 commits behind master on 2018-09-06 14:22:23.509631
+      version: crystal
+    status_description: Pinned 0 commits behind crystal on 2019-03-18 14:05:56.535510
   rcutils:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/rcutils.git
-      version: 0.5.1
+      version: 0.6.2
     source:
       type: git
       url: https://github.com/ros2/rcutils.git
       version: master
-    status_description: Pinned 5 commits behind master on 2018-09-06 14:22:26.661951
+    status_description: Pinned 3 commits behind master on 2019-03-18 14:05:58.190248
   realtime_support:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/realtime_support.git
-      version: 0.5.0
+      version: 0.6.0
     source:
       type: git
       url: https://github.com/ros2/realtime_support.git
       version: master
-    status_description: Pinned 1 commits behind master on 2018-09-06 14:21:59.194608
+    status_description: Pinned 2 commits behind master on 2019-03-18 14:05:58.923915
   resource_retriever:
     release:
       tags:
@@ -262,150 +262,150 @@ repositories:
       type: git
       url: https://github.com/ros/resource_retriever.git
       version: ros2
-    status_description: Pinned 0 commits behind ros2 on 2018-09-06 14:22:15.185130
+    status_description: Pinned 1 commits behind ros2 on 2019-03-18 14:05:59.423532
   rmw:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/rmw.git
-      version: 0.5.0
+      version: 0.6.1
     source:
       type: git
       url: https://github.com/ros2/rmw.git
-      version: master
-    status_description: Pinned 6 commits behind master on 2018-09-06 14:22:19.533978
+      version: crystal
+    status_description: Pinned 1 commits behind crystal on 2019-03-18 14:05:59.810794
   rmw_connext:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/rmw_connext.git
-      version: 0.5.1
+      version: 0.6.1
     source:
       type: git
       url: https://github.com/ros2/rmw_connext.git
-      version: master
-    status_description: Pinned 2 commits behind master on 2018-09-06 14:22:08.757392
+      version: crystal
+    status_description: Pinned 15 commits behind crystal on 2019-03-18 14:06:05.120641
   rmw_fastrtps:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/rmw_fastrtps.git
-      version: 0.5.1
+      version: 0.6.2
     source:
       type: git
       url: https://github.com/ros2/rmw_fastrtps.git
-      version: master
-    status_description: Pinned 7 commits behind master on 2018-09-06 14:22:32.261562
+      version: crystal
+    status_description: Pinned 7 commits behind crystal on 2019-03-18 14:06:11.348202
   rmw_implementation:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/rmw_implementation.git
-      version: 0.5.1
+      version: 0.6.1
     source:
       type: git
       url: https://github.com/ros2/rmw_implementation.git
-      version: master
-    status_description: Pinned 2 commits behind master on 2018-09-06 14:22:15.814950
+      version: crystal
+    status_description: Pinned 0 commits behind crystal on 2019-03-18 14:06:12.358735
   rmw_opensplice:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/rmw_opensplice.git
-      version: 0.5.2
+      version: 0.6.3
     source:
       type: git
       url: https://github.com/ros2/rmw_opensplice.git
-      version: master
-    status_description: Pinned 2 commits behind master on 2018-09-06 14:22:08.078059
+      version: crystal
+    status_description: Pinned 0 commits behind crystal on 2019-03-18 14:06:12.784500
   ros2cli:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/ros2cli.git
-      version: 0.5.4
+      version: 0.6.3
     source:
       type: git
       url: https://github.com/ros2/ros2cli.git
       version: master
-    status_description: Pinned 2 commits behind master on 2018-09-06 14:21:54.877503
+    status_description: Pinned 5 commits behind master on 2019-03-18 14:06:15.964875
   ros_environment:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros/ros_environment.git
-      version: afabe6e2e7f4151fa9afab66873f9a93fd0d7669
+      version: 2.2.0
     source:
       type: git
       url: https://github.com/ros/ros_environment.git
-      version: bouncy
-    status_description: Include unreleased ROS_DISTRO_OVERRIDE patch
+      version: crystal
+    status_description: Pinned 0 commits behind crystal on 2019-03-18 14:06:16.689890
   rosidl:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/rosidl.git
-      version: 0.5.1
+      version: 0.6.3
     source:
       type: git
       url: https://github.com/ros2/rosidl.git
       version: master
-    status_description: Pinned 7 commits behind master on 2018-09-06 14:21:57.806887
+    status_description: Pinned 2 commits behind master on 2019-03-18 14:06:18.997685
   rosidl_dds:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/rosidl_dds.git
-      version: 0.5.0
+      version: 0.6.0
     source:
       type: git
       url: https://github.com/ros2/rosidl_dds.git
       version: master
-    status_description: Pinned 0 commits behind master on 2018-09-06 14:21:55.350502
+    status_description: Pinned 1 commits behind master on 2019-03-18 14:06:20.025199
   rosidl_defaults:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/rosidl_defaults.git
-      version: 0.5.0
+      version: 0.6.0
     source:
       type: git
       url: https://github.com/ros2/rosidl_defaults.git
       version: master
-    status_description: Pinned 1 commits behind master on 2018-09-06 14:22:13.514087
+    status_description: Pinned 0 commits behind master on 2019-03-18 14:06:20.611457
   rosidl_python:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/rosidl_python.git
-      version: 0.5.2
+      version: 0.6.2
     source:
       type: git
       url: https://github.com/ros2/rosidl_python.git
       version: master
-    status_description: Pinned 1 commits behind master on 2018-09-06 14:21:58.703897
+    status_description: Pinned 6 commits behind master on 2019-03-18 14:06:23.693960
   rosidl_typesupport:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/rosidl_typesupport.git
-      version: 0.5.0
+      version: 0.6.2
     source:
       type: git
       url: https://github.com/ros2/rosidl_typesupport.git
       version: master
-    status_description: Pinned 2 commits behind master on 2018-09-06 14:22:07.391809
+    status_description: Pinned 2 commits behind master on 2019-03-18 14:06:26.861275
   rosidl_typesupport_connext:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/rosidl_typesupport_connext.git
-      version: 0.5.3
+      version: 0.6.4
     source:
       type: git
       url: https://github.com/ros2/rosidl_typesupport_connext.git
       version: master
-    status_description: Pinned 3 commits behind master on 2018-09-06 14:22:14.742504
+    status_description: Pinned 2 commits behind master on 2019-03-18 14:06:27.636273
   # rosidl_typesupport_fastrtps:
   #   source:
   #     tags:
@@ -433,12 +433,12 @@ repositories:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/tinyxml2_vendor.git
-      version: 0.4.0
+      version: 0.6.1
     source:
       type: git
       url: https://github.com/ros2/tinyxml2_vendor.git
       version: master
-    status_description: Pinned 0 commits behind master on 2018-09-06 14:21:59.626105
+    status_description: Pinned 0 commits behind master on 2019-03-18 14:06:29.704399
   tinyxml_vendor:
     release:
       tags:
@@ -449,7 +449,7 @@ repositories:
       type: git
       url: https://github.com/ros2/tinyxml_vendor.git
       version: master
-    status_description: Pinned 0 commits behind master on 2018-09-06 14:21:56.394467
+    status_description: Pinned 2 commits behind master on 2019-03-18 14:06:30.985897
   tlsf:
     release:
       tags:
@@ -460,7 +460,7 @@ repositories:
       type: git
       url: https://github.com/ros2/tlsf.git
       version: master
-    status_description: Pinned 0 commits behind master on 2018-09-06 14:21:58.238431
+    status_description: Pinned 0 commits behind master on 2019-03-18 14:06:31.420477
   uncrustify:
     release:
       tags:
@@ -475,14 +475,15 @@ repositories:
   variants:
     release:
       packages:
-        - ros_core
+      - ros_core
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/variants.git
-      version: 0.5.1
+      version: 0.6.1
     source:
       type: git
       url: https://github.com/ros2/variants.git
-      version: devel
+      version: master
+    status_description: Pinned 1 commits behind master on 2019-03-18 14:06:33.062881
 type: distribution
 version: 2
