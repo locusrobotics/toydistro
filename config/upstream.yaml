@@ -14,7 +14,7 @@ mirrors:
       components:
         - main
       keys:
-        - 5523BAEEB01FA116
+        - C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
       filters:
         - Name (% python*-catkin-pkg)
         - Name (% python*-catkin-tools)
@@ -29,7 +29,7 @@ mirrors:
       components:
         - main
       keys:
-        - 5523BAEEB01FA116
+        - C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
       filters:
         - Name (% libopensplice* )
         - Name (% rti-connext-dds* )
