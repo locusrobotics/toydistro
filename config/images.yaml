@@ -1,10 +1,10 @@
 images:
-#  test:
-#    distro: ros1
-#    build_type: docker
-#    package: locus_ansible
-#    provision_file: tailor_tests.yaml
-#    description: Image for running tests on tailor.
+  test:
+    distro: ros1
+    build_type: docker
+    package: locus_ansible
+    provision_file: tailor_tests.yaml
+    description: Image for running tests on tailor.
 #  dev:
 #    distro: ros1
 #    build_type: docker
