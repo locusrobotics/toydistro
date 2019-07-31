@@ -17,4 +17,4 @@ images:
 #    package: locus_ansible
 #    provision_file: bare_metal.yaml
 #    description: Image for the Locus robots.
-#    base_image: xenial-server-cloudimg-amd64-disk1.img
+#    base_image: $distribution-server-cloudimg-amd64-disk1.img
