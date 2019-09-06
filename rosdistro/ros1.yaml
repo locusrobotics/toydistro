@@ -19,7 +19,7 @@ repositories:
     source:
       type: git
       url: https://github.com/locusrobotics/catkin_virtualenv.git
-      version: devel
+      version: master
     status_description: patch out exec depends requirements globbing
   class_loader:
     release:
