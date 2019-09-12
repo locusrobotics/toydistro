@@ -1,12 +1,12 @@
 images:
-  test:
-    distro: ros1
-    build_type: docker
-    description: Image for running tests on tailor.
-  dev:
-    distro: ros1
-    build_type: docker
-    description: Image for running tests on developer's computers.
+#  test:
+#    distro: ros1
+#    build_type: docker
+#    description: Image for running tests on tailor.
+#  dev:
+#    distro: ros1
+#    build_type: docker
+#    description: Image for running tests on developer's computers.
   bot:
     distro: ros1
     build_type: bare_metal
