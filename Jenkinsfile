@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 versions = [
   tailor_meta: "master",
-  tailor_distro: "master",
+  tailor_distro: "rosdistro-upload-fix",
   tailor_image: "master",
 ]
 
