@@ -310,7 +310,7 @@ repositories:
       type: git
       url: https://github.com/ros/std_msgs.git
       version: groovy-devel
-    status_description: Pinned 0 commits behind groovy-devel on 2019-03-18 14:04:49.634503
+    status_description: Pinned 0 commits behind groovy-devel on 2019-09-25 16:35:17.894586
   test_meta:
     source:
       test_commits: true
