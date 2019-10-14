@@ -2,19 +2,13 @@ images:
   test:
     distro: ros1
     build_type: docker
-    package: locus_ansible
-    provision_file: tailor_tests.yaml
     description: Image for running tests on tailor.
-#  dev:
-#    distro: ros1
-#    build_type: docker
-#    package: locus_ansible
-#    provision_file: developer_images.yaml
-#    description: Image for running tests on developer's computers.
-#  bot:
-#    distro: ros1
-#    build_type: bare_metal
-#    package: locus_ansible
-#    provision_file: bare_metal.yaml
-#    description: Image for the Locus robots.
-#    base_image: $distribution-server-cloudimg-amd64-disk1.img
+  dev:
+    distro: ros1
+    build_type: docker
+    description: Image for running tests on developer's computers.
+  bot:
+    distro: ros1
+    build_type: bare_metal
+    base_image: $distribution-server-cloudimg-amd64-disk1.img
+    description: Image for the Robots.
