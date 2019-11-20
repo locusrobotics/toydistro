@@ -9,6 +9,8 @@ images:
 #    description: Image for running tests on developer's computers.
   bot:
     distro: ros1
+    package: locus_ansible
+    provision_file: bare_metal.yaml
     build_type: bare_metal
     base_image: $distribution-server-cloudimg-amd64-disk1.img
     description: Image for the Robots.
