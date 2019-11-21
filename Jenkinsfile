@@ -1,11 +1,7 @@
 #!/usr/bin/env groovy
-versions = [
-  tailor_meta: "master",
-  tailor_distro: "master",
-  tailor_image: "master",
-]
+version = 'merge-refactor'
+library('tailor@' + version)_
 
-library('tailor-meta@' + versions['tailor_meta'])_
-tailorDistroPipeline(
-  versions: versions
+tailorDistribution(
+  version: version
 )
