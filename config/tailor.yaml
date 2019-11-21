@@ -1,0 +1,33 @@
+---
+organization: toydistro
+artifact_storage: s3://locus-toydistro
+docker_registry: https://084758475884.dkr.ecr.us-east-1.amazonaws.com/locus-toydistro
+cloudfront_distribution_id: E3MLX3ENEGCWZZ
+
+flavors:
+  default:
+    # C++14 is the default, but may be overridden on a package-by-package basis.
+    cxx_standard: 14
+    cxx_flags:
+      - -DNDEBUG
+      - -O3
+      - -g
+      # Needed for gator and geometric_shapes due to non-standard literal Q used in boost::math
+      - -fext-numeric-literals
+    build_depends:
+      - build-essential
+      - cmake
+      - debhelper
+      - fakeroot
+    distributions:
+      ros1:
+        compat_catkin_tools: True
+        upstream:
+          name: melodic
+          url: https://raw.githubusercontent.com/ros/rosdistro/master/index.yaml
+      # ros2:
+      #   upstream:
+      #     name: bouncy
+      #     url: https://raw.githubusercontent.com/ros2/rosdistro/master/index.yaml
+      #   underlays:
+      #     - ros1
