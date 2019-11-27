@@ -1,7 +1,8 @@
 ---
 organization: toydistro
 artifact_storage: s3://locus-toydistro
-docker_registry: https://084758475884.dkr.ecr.us-east-1.amazonaws.com/locus-toydistro
+docker_registry: https://084758475884.dkr.ecr.us-east-1.amazonaws.com
+docker_credentials: ecr:us-east-1:tailor_aws
 cloudfront_distribution_id: E3MLX3ENEGCWZZ
 
 flavors:
