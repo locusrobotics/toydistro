@@ -5,8 +5,14 @@ docker_registry: https://084758475884.dkr.ecr.us-east-1.amazonaws.com
 docker_credentials: ecr:us-east-1:tailor_aws
 cloudfront_distribution_id: E3MLX3ENEGCWZZ
 
-flavors:
+os:
+  ubuntu:
+    - xenial
+    - bionic
+
+builds:
   default:
+    description: default flavor
     # C++14 is the default, but may be overridden on a package-by-package basis.
     cxx_standard: 14
     cxx_flags:
@@ -32,3 +38,9 @@ flavors:
       #     url: https://raw.githubusercontent.com/ros2/rosdistro/master/index.yaml
       #   underlays:
       #     - ros1
+  minimal:
+    description: minimal flavor
+    distributions:
+      ros1:
+        packages:
+          - test_meta
