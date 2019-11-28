@@ -30,6 +30,8 @@ builds:
       - fakeroot
     distributions:
       ros1:
+        packages:
+          - test_meta
         compat_catkin_tools: True
         upstream:
           name: melodic
@@ -40,9 +42,9 @@ builds:
       #     url: https://raw.githubusercontent.com/ros2/rosdistro/master/index.yaml
       #   underlays:
       #     - ros1
-  minimal:
-    description: minimal flavor
-    distributions:
-      ros1:
-        packages:
-          - test_meta
+  # walle:
+  #   description: robot packages
+  #   distributions:
+  #     ros1:
+  #       packages:
+  #         - robot_control
