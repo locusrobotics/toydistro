@@ -12,3 +12,7 @@ images:
     build_type: bare_metal
     base_image: $distribution-server-cloudimg-amd64-disk1.img
     description: Image for the Robots.
+  simulation:
+    distro: ros1
+    build_type: ami
+    description: AMI for simulated robots.
