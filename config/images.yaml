@@ -2,17 +2,21 @@ images:
   test:
     distro: ros1
     build_type: docker
+    os_versions: ['xenial', 'bionic']
     description: Image for running tests on tailor.
   dev:
     distro: ros1
     build_type: docker
+    os_versions: ['xenial', 'bionic']
     description: Image for running tests on developer's computers.
   bot:
     distro: ros1
     build_type: bare_metal
+    os_versions: ['xenial']
     base_image: $distribution-server-cloudimg-amd64-disk1.img
     description: Image for the Robots.
   simulation:
     distro: ros1
     build_type: ami
+    os_versions: ['xenial']
     description: AMI for simulated robots.
