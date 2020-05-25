@@ -2,7 +2,7 @@
 versions = [
   tailor_meta: "master",
   tailor_distro: "master",
-  tailor_image: "master",
+  tailor_image: "fix-issue-building-ami",
 ]
 
 library('tailor-meta@' + versions['tailor_meta'])_
