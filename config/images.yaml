@@ -13,5 +13,5 @@ images:
   simulation:
     distro: ros1
     build_type: ami
-    os_versions: ['xenial']
+    os_versions: ['bionic']
     description: AMI for simulated robots.
