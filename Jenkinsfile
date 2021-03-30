@@ -2,7 +2,7 @@
 versions = [
   tailor_meta: "master",
   tailor_distro: "master",
-  tailor_image: "support-multiple-base-images-sim",
+  tailor_image: "master",
 ]
 
 library('tailor-meta@' + versions['tailor_meta'])_
