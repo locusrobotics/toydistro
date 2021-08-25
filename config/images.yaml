@@ -15,5 +15,5 @@ images:
     build_type: ami
     os_versions: ['focal']
     source_ami:
-      bionic: ami-016be23323eaf9e35
+      focal: ami-016be23323eaf9e35
     description: AMI for simulated robots.
