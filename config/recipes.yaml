@@ -13,8 +13,7 @@ flavours:
 
 os:
   ubuntu:
-    - xenial
-    - bionic
+    - focal
 
 common:
   organization: toydistro
