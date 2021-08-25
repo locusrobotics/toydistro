@@ -205,7 +205,7 @@ repositories:
     source:
       type: git
       url: https://github.com/locusrobotics/ros_comm.git
-      version: locus-noeic-devel
+      version: locus-noetic-devel
     status_description: noetic-devel as of 2021-04-19, plus extra fixes
   ros_comm_msgs:
     release:
