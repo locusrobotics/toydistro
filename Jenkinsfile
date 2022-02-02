@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 versions = [
   tailor_meta: "master",
-  tailor_distro: "retry-on-fail",
+  tailor_distro: "retry-on-fail-2",
   tailor_image: "master",
 ]
 
