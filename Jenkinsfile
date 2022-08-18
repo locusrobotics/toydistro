@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 versions = [
   tailor_meta: "master",
-  tailor_distro: "a18556ee968642a7bbb2df4c5342d3c9ecb570df",
+  tailor_distro: "regression-test",
   tailor_image: "master",
 ]
 
