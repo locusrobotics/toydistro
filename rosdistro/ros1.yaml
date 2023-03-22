@@ -319,7 +319,6 @@ repositories:
     status_description: Pinned 1 commits behind kinetic-devel on 2021-03-17 14:51:27.070561
   test_meta:
     source:
-      test_commits: true
       type: git
       url: https://github.com/locusrobotics/test_meta.git
       version: master
