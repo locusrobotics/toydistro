@@ -7,23 +7,30 @@ keyservers:
   - ha.pool.sks-keyservers.net
 
 mirrors:
+{% if distribution == 'focal' %}
   ros:
-      url: http://repositories.ros.org/ubuntu/main/
-      distributions:
-        - {{ distribution }}
-      components:
-        - main
-      keys:
-        - C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
-      filters:
-        - Name (% python*-catkin-pkg)
-        - Name (% python*-catkin-tools)
-        - Name (% python*-rosdep)
-        - Name (% python*-vcstool)
-        - Name (% python-pyside* ) | Name (% libpyside* ) | Name (% pyside* )
-        - Name (% libshiboken* ) | Name (% shiboken* )
+    url: http://packages.ros.org/ros/ubuntu
+    distributions:
+      - {{ distribution }}
+    components:
+      - main
+    keys:
+      - C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+    filters:
+      - Name (% python*-catkin-pkg)
+      - Name (% python*-catkin-tools)
+      - Name (% python*-colcon* )
+      - Name (% python*-rosdep)
+      - Name (% python*-rospkg)
+      - Name (% python*-vcstool)
+      - Name (% python*-osrf-pycommon)
+      - Name (% ceres* ) | Name (% libceres* )
+      - Name (% python-pyside* ) | Name (% libpyside* ) | Name (% pyside* )
+      - Name (% libshiboken* ) | Name (% shiboken* )
+{% endif %}
+{% if distribution == 'jammy' %}
   ros2:
-      url: http://repo.ros2.org/ubuntu/main/
+      url: http://packages.ros.org/ros2/ubuntu
       distributions:
         - {{ distribution }}
       components:
@@ -31,6 +38,18 @@ mirrors:
       keys:
         - C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
       filters:
-        - Name (% libopensplice* )
         - Name (% rti-connext-dds* )
         - Name (% python3-colcon* )
+        - Name (% python3-ifcfg )
+        - Name (% python3-catkin-pkg)
+        - Name (% python3-catkin-tools)
+        - Name (% python3-rosdep)
+        - Name (% python3-rospkg)
+        - Name (% python3-vcstool)
+        - Name (% python3-osrf-pycommon)
+        - Name (% ceres* ) | Name (% libceres* )
+        - Name (% python-pyside* ) | Name (% libpyside* ) | Name (% pyside* )
+        - Name (% libshiboken* ) | Name (% shiboken* )
+        - Name (% libignition-cmake2-dev )
+        - Name (% libignition-math6-dev )
+{% endif %}

@@ -47,13 +47,13 @@ common:
         name: noetic
         url: https://raw.githubusercontent.com/ros/rosdistro/master/index.yaml
       os: []
-    # ros2:
-    #  env:
-    #    ROS_VERSION: 2
-    #   upstream:
-    #     name: iron
-    #     url: https://raw.githubusercontent.com/ros2/rosdistro/master/index.yaml
-    #   underlays:
-    #     - ros1
-    #   os:
-    #     - jammy
+    ros2:
+      env:
+        ROS_VERSION: 2
+      upstream:
+        name: iron
+        url: https://raw.githubusercontent.com/ros/rosdistro/master/index.yaml
+      underlays:
+        - ros1
+      os:
+        - jammy
