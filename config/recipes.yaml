@@ -6,10 +6,10 @@ flavours:
       ros1:
         root_packages:
           - test_meta
-      # ros2:
-      #   root_packages:
-      #     - rclcpp
-      #     - rclpy
+      ros2:
+        root_packages:
+          - rclcpp
+          - rclpy
 
 os:
   ubuntu:
