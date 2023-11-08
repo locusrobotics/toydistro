@@ -44,3 +44,5 @@ opensplice:
   ubuntu: [libopensplice67]
 eigen3:
   ubuntu: [libeigen3-dev]
+lark:
+  ubuntu: []
