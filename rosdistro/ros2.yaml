@@ -323,17 +323,6 @@ repositories:
       url: https://github.com/ros2/rmw_implementation.git
       version: iron
     status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:31.791355
-  rmw_opensplice:
-    release:
-      tags:
-        release: '{{ version }}'
-      url: https://github.com/ros2/rmw_opensplice.git
-      version: 0.6.3
-    source:
-      type: git
-      url: https://github.com/ros2/rmw_opensplice.git
-      version: crystal
-    status_description: Pinned 0 commits behind crystal on 2019-03-18 14:06:12.784500
   ros2cli:
     release:
       tags:
