@@ -44,5 +44,11 @@ opensplice:
   ubuntu: [libopensplice67]
 eigen3:
   ubuntu: [libeigen3-dev]
+rclpy.duration:
+  ubuntu: []
+rclpy.qos:
+  ubuntu: []
+rclpy.clock:
+  ubuntu: []
 lark:
   ubuntu: []

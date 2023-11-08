@@ -147,6 +147,17 @@ repositories:
       url: https://github.com/ros2/libyaml_vendor.git
       version: iron
     status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:08.964388
+  mimick_vendor:
+    release:
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros2/mimick_vendor.git
+      version: 0.3.2
+    source:
+      type: git
+      url: https://github.com/ros2/mimick_vendor.git
+      version: iron
+    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:10.397880
   osrf_pycommon:
     release:
       tags:
@@ -411,6 +422,17 @@ repositories:
       url: https://github.com/ros2/rosidl_defaults.git
       version: iron
     status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:42.019879
+  rosidl_dynamic_typesupport:
+    release:
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros2/rosidl_dynamic_typesupport.git
+      version: 0.0.3
+    source:
+      type: git
+      url: https://github.com/ros2/rosidl_dynamic_typesupport.git
+      version: iron
+    status_description: Pinned 1 commits behind iron on 2023-07-25 14:47:42.840631
   rosidl_python:
     release:
       tags:
