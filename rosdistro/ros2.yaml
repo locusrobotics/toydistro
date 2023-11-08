@@ -356,6 +356,17 @@ repositories:
       url: https://github.com/ros2/rosidl.git
       version: iron
     status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:39.809834
+  rosidl_core:
+    release:
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros2/rosidl_core.git
+      version: 0.1.1
+    source:
+      type: git
+      url: https://github.com/ros2/rosidl_core.git
+      version: iron
+    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:40.644459
   rosidl_dds:
     release:
       tags:
