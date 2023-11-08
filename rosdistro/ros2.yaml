@@ -169,6 +169,17 @@ repositories:
       url: https://github.com/osrf/osrf_testing_tools_cpp.git
       version: iron
     status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:13.077803
+  performance_test_fixture:
+    release:
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros2/performance_test_fixture.git
+      version: 0.1.1
+    source:
+      type: git
+      url: https://github.com/ros2/performance_test_fixture.git
+      version: iron
+    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:13.776160
   pluginlib:
     release:
       tags:
