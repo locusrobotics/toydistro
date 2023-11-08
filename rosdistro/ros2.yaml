@@ -224,6 +224,17 @@ repositories:
       url: https://github.com/ros2/rclpy.git
       version: iron
     status_description: Pinned 1 commits behind iron on 2023-07-25 14:47:24.561462
+  rcpputils:
+    release:
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros2/rcpputils.git
+      version: 2.6.1
+    source:
+      type: git
+      url: https://github.com/ros2/rcpputils.git
+      version: iron
+    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:25.344734
   rcutils:
     release:
       tags:
