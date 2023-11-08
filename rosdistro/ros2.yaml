@@ -180,6 +180,17 @@ repositories:
       url: https://github.com/ros/pluginlib.git
       version: iron
     status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:15.116968
+  python_cmake_module:
+    release:
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros2/python_cmake_module.git
+      version: 0.10.2
+    source:
+      type: git
+      url: https://github.com/ros2/python_cmake_module.git
+      version: iron
+    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:17.011301
   rcl:
     release:
       tags:
