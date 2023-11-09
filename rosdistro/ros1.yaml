@@ -244,13 +244,13 @@ repositories:
     release:
       tags:
         release: '{{ version }}'
-      url: https://github.com/ros/rosconsole.git
-      version: 1.14.3
+      url: https://github.com/ros-o/rosconsole.git
+      version: e3753eec58bf4e76012d019fd307349f94d1d0be
     source:
       type: git
-      url: https://github.com/ros/rosconsole.git
-      version: noetic-devel
-    status_description: Pinned 0 commits behind noetic-devel on 2021-03-17 14:50:48.313110
+      url: https://github.com/ros-o/rosconsole.git
+      version: obese-devel
+    status_description: Allow to use log4cxx 0.12 (default for jammy)
   rosconsole_bridge:
     release:
       tags:
