@@ -159,6 +159,17 @@ repositories:
       version: release_2.0
     status: developed
     status_description: Pinned 0 commits behind release_2.0 on 2023-07-25 14:46:58.191168
+  libstatistics_collector:
+    release:
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros-tooling/libstatistics_collector.git
+      version: 1.5.1
+    source:
+      type: git
+      url: https://github.com/ros-tooling/libstatistics_collector.git
+      version: iron
+    status_description: Pinned 1 commits behind iron on 2023-07-25 14:47:08.344485
   libyaml_vendor:
     release:
       tags:
@@ -225,6 +236,17 @@ repositories:
       url: https://github.com/ros/pluginlib.git
       version: iron
     status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:15.116968
+  pybind11_vendor:
+    release:
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros2/pybind11_vendor.git
+      version: 3.0.3
+    source:
+      type: git
+      url: https://github.com/ros2/pybind11_vendor.git
+      version: iron
+    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:16.416341
   python_cmake_module:
     release:
       tags:
@@ -390,6 +412,17 @@ repositories:
       url: https://github.com/ros2/rmw_implementation.git
       version: iron
     status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:31.791355
+  ros2_tracing:
+    release:
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros2/ros2_tracing.git
+      version: 6.3.1
+    source:
+      type: git
+      url: https://github.com/ros2/ros2_tracing.git
+      version: iron
+    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:34.344422
   ros2cli:
     release:
       tags:
@@ -500,6 +533,39 @@ repositories:
   #     url: https://github.com/ros2/rosidl_typesupport_fastrtps.git
   #     version: iron
   #   status_description: Pinned 0 commits behind iron on 2023-07-25 19:49:10.015862
+  rpyutils:
+    release:
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros2/rpyutils.git
+      version: 0.3.2
+    source:
+      type: git
+      url: https://github.com/ros2/rpyutils.git
+      version: iron
+    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:46.923041
+  spdlog_vendor:
+    release:
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros2/spdlog_vendor.git
+      version: 1.4.4
+    source:
+      type: git
+      url: https://github.com/ros2/spdlog_vendor.git
+      version: iron
+    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:54.905543
+  test_interface_files:
+    release:
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros2/test_interface_files.git
+      version: 0.10.2
+    source:
+      type: git
+      url: https://github.com/ros2/test_interface_files.git
+      version: iron
+    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:56.853890
   tinyxml2_vendor:
     release:
       tags:
@@ -558,5 +624,16 @@ repositories:
       version: master
     status: maintained
     status_description: Pinned 1 commits behind master on 2023-07-25 14:48:08.226011
+  unique_identifier_msgs:
+    release:
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros2/unique_identifier_msgs.git
+      version: 2.3.2
+    source:
+      type: git
+      url: https://github.com/ros2/unique_identifier_msgs.git
+      version: iron
+    status_description: Pinned 0 commits behind iron on 2023-07-25 14:48:05.695383
 type: distribution
 version: 2
