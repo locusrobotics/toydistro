@@ -9,12 +9,12 @@ repositories:
       tags:
         release: '{{ version }}'
       url: https://github.com/ament/ament_cmake.git
-      version: 2.0.3
+      version: 2.0.7
     source:
       type: git
       url: https://github.com/ament/ament_cmake.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:46:27.451246
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:05:38.925270
   ament_cmake_ros:
     release:
       tags:
@@ -25,7 +25,7 @@ repositories:
       type: git
       url: https://github.com/ros2/ament_cmake_ros.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:46:28.716432
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:05:40.672604
   ament_index:
     release:
       tags:
@@ -36,18 +36,18 @@ repositories:
       type: git
       url: https://github.com/ament/ament_index.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:46:29.597294
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:05:42.994398
   ament_lint:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ament/ament_lint.git
-      version: 0.14.1
+      version: 0.14.4
     source:
       type: git
       url: https://github.com/ament/ament_lint.git
       version: iron
-    status_description: Pinned 1 commits behind iron on 2023-07-25 14:46:30.826484
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:05:46.548496
   ament_package:
     release:
       tags:
@@ -58,7 +58,7 @@ repositories:
       type: git
       url: https://github.com/ament/ament_package.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:46:31.665037
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:05:48.902223
   class_loader:
     release:
       tags:
@@ -69,18 +69,18 @@ repositories:
       type: git
       url: https://github.com/ros/class_loader.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:46:35.772122
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:05:51.726615
   common_interfaces:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/common_interfaces.git
-      version: 5.0.0
+      version: 5.0.1
     source:
       type: git
       url: https://github.com/ros2/common_interfaces.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:46:36.509712
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:05:54.625660
   console_bridge_vendor:
     release:
       tags:
@@ -91,29 +91,18 @@ repositories:
       type: git
       url: https://github.com/ros2/console_bridge_vendor.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:46:37.072019
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:05:56.485888
   cyclonedds:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/eclipse-cyclonedds/cyclonedds.git
-      version: 0.10.3
+      version: 0.10.5
     source:
       type: git
       url: https://github.com/eclipse-cyclonedds/cyclonedds.git
       version: releases/0.10.x
-    status_description: Pinned 8 commits behind releases/0.10.x on 2023-07-25 14:46:39.455543
-  #fastrtps:
-  #  release:
-  #    tags:
-  #      release: release/{{ upstream }}/{{ package }}/{{ version }}
-  #    url: https://github.com/ros2-gbp/fastrtps-release.git
-  #    version: 1.7.2-0
-  #  source:
-  #    type: git
-  #    url: https://github.com/eProsima/Fast-RTPS.git
-  #    version: master
-  #  status_description: Pinned 10 commits behind master on 2018-09-06 14:22:11.386894
+    status_description: Pinned 5 commits behind releases/0.10.x on 2025-11-25 16:06:00.852119
   google_benchmark_vendor:
     release:
       tags:
@@ -124,7 +113,7 @@ repositories:
       type: git
       url: https://github.com/ament/google_benchmark_vendor.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:46:56.590427
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:06:02.611600
   googletest:
     release:
       tags:
@@ -135,41 +124,41 @@ repositories:
       type: git
       url: https://github.com/ament/googletest.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:46:57.467108
-  launch:
-    release:
-      tags:
-        release: '{{ version }}'
-      url: https://github.com/ros2/launch.git
-      version: 2.0.2
-    source:
-      type: git
-      url: https://github.com/ros2/launch.git
-      version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:06.659372
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:06:04.571316
   iceoryx:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/eclipse-iceoryx/iceoryx.git
-      version: v2.0.3
+      version: v2.0.6
     source:
       type: git
       url: https://github.com/eclipse-iceoryx/iceoryx.git
       version: release_2.0
     status: developed
-    status_description: Pinned 0 commits behind release_2.0 on 2023-07-25 14:46:58.191168
+    status_description: Pinned 5 commits behind release_2.0 on 2025-11-25 16:06:18.061481
+  launch:
+    release:
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros2/launch.git
+      version: 2.0.4
+    source:
+      type: git
+      url: https://github.com/ros2/launch.git
+      version: iron
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:06:22.112517
   libstatistics_collector:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros-tooling/libstatistics_collector.git
-      version: 1.5.1
+      version: 1.5.3
     source:
       type: git
       url: https://github.com/ros-tooling/libstatistics_collector.git
       version: iron
-    status_description: Pinned 1 commits behind iron on 2023-07-25 14:47:08.344485
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:06:24.475240
   libyaml_vendor:
     release:
       tags:
@@ -180,7 +169,7 @@ repositories:
       type: git
       url: https://github.com/ros2/libyaml_vendor.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:08.964388
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:06:26.267948
   mimick_vendor:
     release:
       tags:
@@ -191,18 +180,18 @@ repositories:
       type: git
       url: https://github.com/ros2/mimick_vendor.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:10.397880
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:06:28.003776
   osrf_pycommon:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/osrf/osrf_pycommon.git
-      version: 2.1.3
+      version: 2.1.7
     source:
       type: git
       url: https://github.com/osrf/osrf_pycommon.git
       version: master
-    status_description: Pinned 1 commits behind master on 2023-07-25 14:47:12.456266
+    status_description: Pinned 0 commits behind master on 2025-11-25 16:06:29.773403
   osrf_testing_tools_cpp:
     release:
       tags:
@@ -213,7 +202,7 @@ repositories:
       type: git
       url: https://github.com/osrf/osrf_testing_tools_cpp.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:13.077803
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:06:31.494514
   performance_test_fixture:
     release:
       tags:
@@ -224,7 +213,7 @@ repositories:
       type: git
       url: https://github.com/ros2/performance_test_fixture.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:13.776160
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:06:33.265874
   pluginlib:
     release:
       tags:
@@ -235,7 +224,7 @@ repositories:
       type: git
       url: https://github.com/ros/pluginlib.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:15.116968
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:06:37.134031
   pybind11_vendor:
     release:
       tags:
@@ -246,7 +235,7 @@ repositories:
       type: git
       url: https://github.com/ros2/pybind11_vendor.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:16.416341
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:06:38.848000
   python_cmake_module:
     release:
       tags:
@@ -257,18 +246,18 @@ repositories:
       type: git
       url: https://github.com/ros2/python_cmake_module.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:17.011301
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:06:40.574873
   rcl:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/rcl.git
-      version: 6.0.2
+      version: 6.0.7
     source:
       type: git
       url: https://github.com/ros2/rcl.git
       version: iron
-    status_description: Pinned 1 commits behind iron on 2023-07-25 14:47:18.976512
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:06:44.627065
   rcl_interfaces:
     release:
       tags:
@@ -279,7 +268,7 @@ repositories:
       type: git
       url: https://github.com/ros2/rcl_interfaces.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:19.875543
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:06:46.969998
   rcl_logging:
     release:
       tags:
@@ -290,51 +279,51 @@ repositories:
       type: git
       url: https://github.com/ros2/rcl_logging.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:20.504642
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:06:49.319567
   rclcpp:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/rclcpp.git
-      version: 21.0.2
+      version: 21.0.8
     source:
       type: git
       url: https://github.com/ros2/rclcpp.git
       version: iron
-    status_description: Pinned 2 commits behind iron on 2023-07-25 14:47:23.154797
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:06:54.371344
   rclpy:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/rclpy.git
-      version: 4.1.2
+      version: 4.1.7
     source:
       type: git
       url: https://github.com/ros2/rclpy.git
       version: iron
-    status_description: Pinned 1 commits behind iron on 2023-07-25 14:47:24.561462
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:06:58.238927
   rcpputils:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/rcpputils.git
-      version: 2.6.1
+      version: 2.6.4
     source:
       type: git
       url: https://github.com/ros2/rcpputils.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:25.344734
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:01.130975
   rcutils:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/rcutils.git
-      version: 6.2.1
+      version: 6.2.4
     source:
       type: git
       url: https://github.com/ros2/rcutils.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:26.191108
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:04.740414
   realtime_support:
     release:
       tags:
@@ -345,18 +334,18 @@ repositories:
       type: git
       url: https://github.com/ros2/realtime_support.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:26.926139
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:07.051983
   resource_retriever:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros/resource_retriever.git
-      version: 3.2.2
+      version: 3.2.3
     source:
       type: git
       url: https://github.com/ros/resource_retriever.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:27.645120
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:09.349353
   rmw:
     release:
       tags:
@@ -367,7 +356,7 @@ repositories:
       type: git
       url: https://github.com/ros2/rmw.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:28.374562
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:12.220104
   rmw_cyclonedds:
     release:
       tags:
@@ -378,7 +367,7 @@ repositories:
       type: git
       url: https://github.com/ros2/rmw_cyclonedds.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:29.305824
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:15.107789
   rmw_dds_common:
     release:
       tags:
@@ -389,51 +378,40 @@ repositories:
       type: git
       url: https://github.com/ros2/rmw_dds_common.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:29.872122
-  # rmw_fastrtps:
-  #   release:
-  #     tags:
-  #       release: '{{ version }}'
-  #     url: https://github.com/ros2/rmw_fastrtps.git
-  #     version: 7.1.1
-  #   source:
-  #     type: git
-  #     url: https://github.com/ros2/rmw_fastrtps.git
-  #     version: iron
-  #   status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:30.855029
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:16.827525
   rmw_implementation:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/rmw_implementation.git
-      version: 2.12.0
+      version: 2.12.1
     source:
       type: git
       url: https://github.com/ros2/rmw_implementation.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:31.791355
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:19.751893
   ros2_tracing:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/ros2_tracing.git
-      version: 6.3.1
+      version: 6.3.3
     source:
       type: git
       url: https://github.com/ros2/ros2_tracing.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:34.344422
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:22.592612
   ros2cli:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/ros2cli.git
-      version: 0.25.2
+      version: 0.25.8
     source:
       type: git
       url: https://github.com/ros2/ros2cli.git
       version: iron
-    status_description: Pinned 1 commits behind iron on 2023-07-25 14:47:35.778875
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:26.778587
   ros_environment:
     release:
       tags:
@@ -444,7 +422,7 @@ repositories:
       type: git
       url: https://github.com/ros/ros_environment.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:37.100718
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:29.066601
   rosidl:
     release:
       tags:
@@ -455,7 +433,7 @@ repositories:
       type: git
       url: https://github.com/ros2/rosidl.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:39.809834
+    status_description: Pinned 1 commits behind iron on 2025-11-25 16:07:32.467822
   rosidl_core:
     release:
       tags:
@@ -466,7 +444,7 @@ repositories:
       type: git
       url: https://github.com/ros2/rosidl_core.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:40.644459
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:34.247062
   rosidl_dds:
     release:
       tags:
@@ -477,7 +455,7 @@ repositories:
       type: git
       url: https://github.com/ros2/rosidl_dds.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:41.233998
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:35.979371
   rosidl_defaults:
     release:
       tags:
@@ -488,18 +466,18 @@ repositories:
       type: git
       url: https://github.com/ros2/rosidl_defaults.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:42.019879
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:37.759413
   rosidl_dynamic_typesupport:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/rosidl_dynamic_typesupport.git
-      version: 0.0.3
+      version: 0.0.5
     source:
       type: git
       url: https://github.com/ros2/rosidl_dynamic_typesupport.git
       version: iron
-    status_description: Pinned 1 commits behind iron on 2023-07-25 14:47:42.840631
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:39.504420
   rosidl_python:
     release:
       tags:
@@ -510,7 +488,7 @@ repositories:
       type: git
       url: https://github.com/ros2/rosidl_python.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:44.421371
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:42.408952
   rosidl_typesupport:
     release:
       tags:
@@ -521,18 +499,7 @@ repositories:
       type: git
       url: https://github.com/ros2/rosidl_typesupport.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:46.199789
-  # rosidl_typesupport_fastrtps:
-  #   release:
-  #     tags:
-  #       release: '{{ version }}'
-  #     url: https://github.com/ros2/rosidl_typesupport_fastrtps.git
-  #     version: 3.0.1
-  #   source:
-  #     type: git
-  #     url: https://github.com/ros2/rosidl_typesupport_fastrtps.git
-  #     version: iron
-  #   status_description: Pinned 0 commits behind iron on 2023-07-25 19:49:10.015862
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:44.731068
   rpyutils:
     release:
       tags:
@@ -543,7 +510,7 @@ repositories:
       type: git
       url: https://github.com/ros2/rpyutils.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:46.923041
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:46.549587
   spdlog_vendor:
     release:
       tags:
@@ -554,7 +521,7 @@ repositories:
       type: git
       url: https://github.com/ros2/spdlog_vendor.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:54.905543
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:48.363563
   test_interface_files:
     release:
       tags:
@@ -565,18 +532,18 @@ repositories:
       type: git
       url: https://github.com/ros2/test_interface_files.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:56.853890
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:50.702465
   tinyxml2_vendor:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros2/tinyxml2_vendor.git
-      version: 0.8.2
+      version: 0.8.3
     source:
       type: git
       url: https://github.com/ros2/tinyxml2_vendor.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:57.491414
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:52.443580
   tinyxml_vendor:
     release:
       tags:
@@ -587,7 +554,7 @@ repositories:
       type: git
       url: https://github.com/ros2/tinyxml_vendor.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:58.417269
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:54.196913
   tlsf:
     release:
       tags:
@@ -598,7 +565,7 @@ repositories:
       type: git
       url: https://github.com/ros2/tlsf.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:47:59.085966
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:56.196880
   uncrustify_vendor:
     release:
       tags:
@@ -609,7 +576,18 @@ repositories:
       type: git
       url: https://github.com/ament/uncrustify_vendor.git
       version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:48:04.967191
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:57.927063
+  unique_identifier_msgs:
+    release:
+      tags:
+        release: '{{ version }}'
+      url: https://github.com/ros2/unique_identifier_msgs.git
+      version: 2.3.2
+    source:
+      type: git
+      url: https://github.com/ros2/unique_identifier_msgs.git
+      version: iron
+    status_description: Pinned 0 commits behind iron on 2025-11-25 16:07:59.892538
   variants:
     release:
       packages:
@@ -623,17 +601,6 @@ repositories:
       url: https://github.com/ros2/variants.git
       version: master
     status: maintained
-    status_description: Pinned 1 commits behind master on 2023-07-25 14:48:08.226011
-  unique_identifier_msgs:
-    release:
-      tags:
-        release: '{{ version }}'
-      url: https://github.com/ros2/unique_identifier_msgs.git
-      version: 2.3.2
-    source:
-      type: git
-      url: https://github.com/ros2/unique_identifier_msgs.git
-      version: iron
-    status_description: Pinned 0 commits behind iron on 2023-07-25 14:48:05.695383
+    status_description: Pinned 2 commits behind master on 2025-11-25 16:08:02.345843
 type: distribution
 version: 2

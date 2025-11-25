@@ -9,12 +9,12 @@ repositories:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros/catkin.git
-      version: 0.8.9
+      version: 0.8.12
     source:
       type: git
       url: https://github.com/ros/catkin.git
       version: noetic-devel
-    status_description: Pinned 2 commits behind noetic-devel on 2021-03-17 14:48:57.034293
+    status_description: Pinned 1 commits behind noetic-devel on 2025-11-25 16:02:34.940674
   catkin_virtualenv:
     source:
       type: git
@@ -25,12 +25,12 @@ repositories:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros/class_loader.git
-      version: 0.5.0
+      version: 0.5.2
     source:
       type: git
       url: https://github.com/ros/class_loader.git
       version: noetic-devel
-    status_description: Pinned 1 commits behind noetic-devel on 2021-03-17 14:48:58.496659
+    status_description: Pinned 0 commits behind noetic-devel on 2025-11-25 16:02:37.957245
   cmake_modules:
     release:
       tags:
@@ -41,18 +41,18 @@ repositories:
       type: git
       url: https://github.com/ros/cmake_modules.git
       version: 0.4-devel
-    status_description: Pinned 0 commits behind 0.4-devel on 2021-03-17 14:48:59.477676
+    status_description: Pinned 0 commits behind 0.4-devel on 2025-11-25 16:02:39.639614
   common_msgs:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros/common_msgs.git
-      version: 1.13.1
+      version: 1.13.2
     source:
       type: git
       url: https://github.com/ros/common_msgs.git
       version: noetic-devel
-    status_description: Pinned 0 commits behind noetic-devel on 2021-03-17 14:49:02.589493
+    status_description: Pinned 1 commits behind noetic-devel on 2025-11-25 16:02:43.056026
   gencpp:
     release:
       tags:
@@ -63,7 +63,7 @@ repositories:
       type: git
       url: https://github.com/ros/gencpp.git
       version: kinetic-devel
-    status_description: Pinned 1 commits behind kinetic-devel on 2021-03-17 14:49:24.390747
+    status_description: Pinned 2 commits behind kinetic-devel on 2025-11-25 16:02:45.995922
   geneus:
     release:
       tags:
@@ -74,7 +74,7 @@ repositories:
       type: git
       url: https://github.com/jsk-ros-pkg/geneus.git
       version: master
-    status_description: Pinned 0 commits behind master on 2021-03-17 14:49:25.373487
+    status_description: Pinned 0 commits behind master on 2025-11-25 16:02:47.728481
   genlisp:
     release:
       tags:
@@ -85,7 +85,7 @@ repositories:
       type: git
       url: https://github.com/ros/genlisp.git
       version: kinetic-devel
-    status_description: Pinned 0 commits behind kinetic-devel on 2021-03-17 14:49:26.339964
+    status_description: Pinned 0 commits behind kinetic-devel on 2025-11-25 16:02:49.412425
   genmsg:
     release:
       tags:
@@ -96,7 +96,7 @@ repositories:
       type: git
       url: https://github.com/ros/genmsg.git
       version: kinetic-devel
-    status_description: Pinned 1 commits behind kinetic-devel on 2021-03-17 14:49:28.617577
+    status_description: Pinned 1 commits behind kinetic-devel on 2025-11-25 16:02:52.311233
   gennodejs:
     release:
       tags:
@@ -107,18 +107,18 @@ repositories:
       type: git
       url: https://github.com/RethinkRobotics-opensource/gennodejs.git
       version: kinetic-devel
-    status_description: Pinned 5 commits behind kinetic-devel on 2021-03-17 14:49:30.973360
+    status_description: Pinned 5 commits behind kinetic-devel on 2025-11-25 16:02:56.565312
   genpy:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros/genpy.git
-      version: 0.6.14
+      version: 0.6.15
     source:
       type: git
       url: https://github.com/ros/genpy.git
       version: kinetic-devel
-    status_description: Pinned 3 commits behind kinetic-devel on 2021-03-17 14:49:33.013957
+    status_description: Pinned 0 commits behind kinetic-devel on 2025-11-25 16:02:59.323592
   message_generation:
     release:
       tags:
@@ -129,7 +129,7 @@ repositories:
       type: git
       url: https://github.com/ros/message_generation.git
       version: kinetic-devel
-    status_description: Pinned 0 commits behind kinetic-devel on 2021-03-17 14:49:57.157340
+    status_description: Pinned 0 commits behind kinetic-devel on 2025-11-25 16:03:01.124962
   message_runtime:
     release:
       tags:
@@ -140,7 +140,7 @@ repositories:
       type: git
       url: https://github.com/ros/message_runtime.git
       version: kinetic-devel
-    status_description: Pinned 0 commits behind kinetic-devel on 2021-03-17 14:49:58.435332
+    status_description: Pinned 0 commits behind kinetic-devel on 2025-11-25 16:03:02.954593
   metapackages:
     release:
       packages:
@@ -153,29 +153,29 @@ repositories:
       type: git
       url: https://github.com/ros/metapackages.git
       version: noetic-devel
-    status_description: Pinned 0 commits behind noetic-devel on 2021-03-17 14:50:00.082760
+    status_description: Pinned 1 commits behind noetic-devel on 2025-11-25 16:03:04.674252
   pluginlib:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros/pluginlib.git
-      version: 1.13.0
+      version: 1.13.2
     source:
       type: git
       url: https://github.com/ros/pluginlib.git
       version: noetic-devel
-    status_description: Pinned 0 commits behind noetic-devel on 2021-03-17 14:50:14.041161
+    status_description: Pinned 0 commits behind noetic-devel on 2025-11-25 16:03:08.602025
   ros:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros/ros.git
-      version: 1.15.7
+      version: 1.15.10
     source:
       type: git
       url: https://github.com/ros/ros.git
       version: noetic-devel
-    status_description: Pinned 2 commits behind noetic-devel on 2021-03-17 14:50:33.517898
+    status_description: Pinned 1 commits behind noetic-devel on 2025-11-25 16:03:14.973855
   ros_comm:
     release:
       packages:
@@ -217,7 +217,7 @@ repositories:
       type: git
       url: https://github.com/ros/ros_comm_msgs.git
       version: kinetic-devel
-    status_description: Pinned 1 commits behind kinetic-devel on 2021-03-17 14:50:34.432626
+    status_description: Pinned 1 commits behind kinetic-devel on 2025-11-25 16:03:16.875943
   ros_environment:
     release:
       tags:
@@ -228,7 +228,7 @@ repositories:
       type: git
       url: https://github.com/ros/ros_environment.git
       version: noetic
-    status_description: Pinned 0 commits behind noetic on 2021-03-17 14:50:41.693355
+    status_description: Pinned 0 commits behind noetic on 2025-11-25 16:03:19.300769
   rosbag_migration_rule:
     release:
       tags:
@@ -239,18 +239,18 @@ repositories:
       type: git
       url: https://github.com/ros/rosbag_migration_rule.git
       version: master
-    status_description: Pinned 1 commits behind master on 2021-03-17 14:50:46.345638
+    status_description: Pinned 1 commits behind master on 2025-11-25 16:03:21.046555
   rosconsole:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros-o/rosconsole.git
-      version: e3753eec58bf4e76012d019fd307349f94d1d0be
+      version: 1.14.3
     source:
       type: git
       url: https://github.com/ros-o/rosconsole.git
       version: obese-devel
-    status_description: Allow to use log4cxx 0.12 (default for jammy)
+    status_description: Pinned 5 commits behind obese-devel on 2025-11-25 16:03:27.657957
   rosconsole_bridge:
     release:
       tags:
@@ -261,18 +261,18 @@ repositories:
       type: git
       url: https://github.com/ros/rosconsole_bridge.git
       version: kinetic-devel
-    status_description: Pinned 1 commits behind kinetic-devel on 2021-03-17 14:50:49.222885
+    status_description: Pinned 1 commits behind kinetic-devel on 2025-11-25 16:03:29.406717
   roscpp_core:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros/roscpp_core.git
-      version: 0.7.2
+      version: 0.7.3
     source:
       type: git
       url: https://github.com/ros/roscpp_core.git
       version: noetic-devel
-    status_description: Pinned 0 commits behind noetic-devel on 2021-03-17 14:50:50.390076
+    status_description: Pinned 2 commits behind noetic-devel on 2025-11-25 16:03:32.367323
   roslint:
     release:
       tags:
@@ -283,29 +283,29 @@ repositories:
       type: git
       url: https://github.com/ros/roslint.git
       version: master
-    status_description: Pinned 0 commits behind master on 2021-03-17 14:50:51.199403
+    status_description: Pinned 4 commits behind master on 2025-11-25 16:03:36.043330
   roslisp:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros/roslisp.git
-      version: 1.9.24
+      version: 1.9.25
     source:
       type: git
       url: https://github.com/ros/roslisp.git
       version: master
-    status_description: Pinned 1 commits behind master on 2021-03-17 14:50:52.068483
+    status_description: Pinned 0 commits behind master on 2025-11-25 16:03:37.802231
   rospack:
     release:
       tags:
         release: '{{ version }}'
       url: https://github.com/ros/rospack.git
-      version: 2.6.2
+      version: 2.6.4
     source:
       type: git
       url: https://github.com/ros/rospack.git
       version: noetic-devel
-    status_description: Pinned 1 commits behind noetic-devel on 2021-03-17 14:50:53.617504
+    status_description: Pinned 1 commits behind noetic-devel on 2025-11-25 16:03:40.929791
   std_msgs:
     release:
       tags:
@@ -316,7 +316,7 @@ repositories:
       type: git
       url: https://github.com/ros/std_msgs.git
       version: kinetic-devel
-    status_description: Pinned 1 commits behind kinetic-devel on 2021-03-17 14:51:27.070561
+    status_description: Pinned 1 commits behind kinetic-devel on 2025-11-25 16:03:43.227534
   test_meta:
     source:
       type: git
