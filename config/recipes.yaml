@@ -1,5 +1,11 @@
 ---
 flavours:
+  build:
+    description: Contains packages to build images
+    distributions:
+      ros1:
+        root_packages:
+          - test_meta
   test:
     description: default flavour
     distributions:
@@ -14,6 +20,7 @@ flavours:
 os:
   ubuntu:
     - jammy
+    - noble
 
 common:
   organization: toydistro
@@ -52,9 +59,8 @@ common:
       env:
         ROS_VERSION: 2
       upstream:
-        name: iron
+        name: jazzy
         url: https://raw.githubusercontent.com/ros/rosdistro/master/index.yaml
       underlays:
         - ros1
-      os:
-        - jammy
+      os: []

@@ -1,26 +1,26 @@
 images:
-  #test:
-  #  distro: ros1
-  #  build_type: docker
-  #  os_versions: ['focal']
-  #  description: Image for running tests on tailor.
-  #bot:
-  #  distro: ros1
-  #  build_type: bare_metal
-  #  os_versions: ['focal']
-  #  base_image: $distribution-server-toydistro-amd64-disk1.img
-  #  description: Image for the Robots.
-  #simulation:
-  #  distro: ros1
-  #  build_type: ami
-  #  os_versions: ['focal']
-  #  source_ami:
-  #    focal: ami-016be23323eaf9e35
-  #  description: AMI for simulated robots.
-  #
+  test:
+    distro: ros1
+    build_type: docker
+    os_versions: ['jammy', 'noble']
+    description: Image for running tests on tailor.
   bot:
     distro: ros1
-    build_type: lxd
-    os_versions: ['focal']
+    build_type: bare_metal
+    os_versions: ['jammy', 'noble']
     base_image: $distribution-server-toydistro-amd64-disk1.img
     description: Image for the Robots.
+  simulation:
+    distro: ros1
+    build_type: ami
+    os_versions: ['jammy', 'noble']
+    source_ami:
+      jammy: ami-071c9f59748eeb28c
+      noble: ami-014a037c210fcadda
+    description: AMI for simulated robots.
+  server:
+    distro: ros1
+    build_type: lxd
+    os_versions: ['jammy', 'noble']
+    base_image: $distribution-server-toydistro-amd64-disk1.img
+    description: Image for the Servers.
