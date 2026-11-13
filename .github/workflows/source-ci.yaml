@@ -20,9 +20,9 @@ permissions:
 jobs:
   poll:
     if: github.event_name == 'workflow_dispatch' || vars.SOURCE_CI_ENABLED == 'true'
-    uses: locusrobotics/tailor-meta/.github/workflows/source-poll.yaml@9bf469df0b1b890e64fb04fcb79016a9101ad13e
+    uses: locusrobotics/tailor-meta/.github/workflows/source-poll.yaml@ac4a18f83cbd3546716699c8f52bd59f33c589c5
     with:
-      tailor_meta: 9bf469df0b1b890e64fb04fcb79016a9101ad13e
+      tailor_meta: ac4a18f83cbd3546716699c8f52bd59f33c589c5
       configuration_ref: refs/heads/feature/github-actions-smoke
       source_repositories: '["locusrobotics/test_meta"]'
       dry_run: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || false }}
