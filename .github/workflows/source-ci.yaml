@@ -1,0 +1,32 @@
+name: Central source CI pilot
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  push:
+    branches: ['feature/github-actions-smoke']
+    paths: ['.github/workflows/source-ci.yaml']
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Discover only; do not write statuses/state or upload inputs
+        type: boolean
+        default: true
+      retry_failed:
+        type: boolean
+        default: false
+permissions:
+  contents: read
+  actions: write
+jobs:
+  poll:
+    if: github.event_name == 'workflow_dispatch' || vars.SOURCE_CI_ENABLED == 'true'
+    uses: locusrobotics/tailor-meta/.github/workflows/source-poll.yaml@9bf469df0b1b890e64fb04fcb79016a9101ad13e
+    with:
+      tailor_meta: 9bf469df0b1b890e64fb04fcb79016a9101ad13e
+      configuration_ref: refs/heads/feature/github-actions-smoke
+      source_repositories: '["locusrobotics/test_meta"]'
+      dry_run: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || false }}
+      retry_failed: ${{ inputs.retry_failed || false }}
+      allow_public_inputs: ${{ vars.SOURCE_CI_PUBLIC_INPUTS == 'true' }}
+    secrets:
+      SOURCE_CI_GITHUB_TOKEN: ${{ secrets.SOURCE_CI_GITHUB_TOKEN }}

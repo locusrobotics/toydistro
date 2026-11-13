@@ -10,45 +10,26 @@ on:
         type: choice
         options: [validate, graph, packages, release]
         default: validate
-      maintain_sources:
-        description: Write the test_meta/master hook against this feature label
-        type: boolean
-        default: false
 permissions:
   contents: read
 jobs:
   builders:
-    if: >-
-      github.event_name != 'pull_request' &&
-      !(github.event_name == 'workflow_dispatch' && inputs.maintain_sources && inputs.mode == 'validate')
+    if: github.event_name != 'pull_request'
     permissions:
       contents: read
       packages: write
-    uses: locusrobotics/tailor-meta/.github/workflows/toolchain-images.yaml@e521cb11fafde92060d1bf9632e9899e3048d55f
+    uses: locusrobotics/tailor-meta/.github/workflows/toolchain-images.yaml@9bf469df0b1b890e64fb04fcb79016a9101ad13e
     with:
-      tailor_meta: e521cb11fafde92060d1bf9632e9899e3048d55f
+      tailor_meta: 9bf469df0b1b890e64fb04fcb79016a9101ad13e
   ci:
-    if: >-
-      !(github.event_name == 'workflow_dispatch' && inputs.maintain_sources && inputs.mode == 'validate')
-    uses: locusrobotics/tailor-meta/.github/workflows/ci.yaml@e521cb11fafde92060d1bf9632e9899e3048d55f
+    uses: locusrobotics/tailor-meta/.github/workflows/ci.yaml@9bf469df0b1b890e64fb04fcb79016a9101ad13e
     with:
-      tailor_meta: e521cb11fafde92060d1bf9632e9899e3048d55f
+      tailor_meta: 9bf469df0b1b890e64fb04fcb79016a9101ad13e
   tailor:
     if: github.event_name == 'workflow_dispatch' && inputs.mode != 'validate'
     needs: builders
-    uses: locusrobotics/tailor-meta/.github/workflows/distribution.yaml@e521cb11fafde92060d1bf9632e9899e3048d55f
+    uses: locusrobotics/tailor-meta/.github/workflows/distribution.yaml@9bf469df0b1b890e64fb04fcb79016a9101ad13e
     with:
-      tailor_meta: e521cb11fafde92060d1bf9632e9899e3048d55f
+      tailor_meta: 9bf469df0b1b890e64fb04fcb79016a9101ad13e
       mode: ${{ inputs.mode || 'validate' }}
-    secrets: inherit
-  source-stubs:
-    needs: tailor
-    if: >-
-      always() && github.event_name == 'workflow_dispatch' && inputs.maintain_sources &&
-      (needs.tailor.result == 'success' || needs.tailor.result == 'skipped')
-    uses: locusrobotics/tailor-meta/.github/workflows/maintain-sources.yaml@a50b218b04d943ab6a03d31a422675cf83c5b452
-    with:
-      tailor_meta: a50b218b04d943ab6a03d31a422675cf83c5b452
-      apply: true
-      allow_feature: true
     secrets: inherit
