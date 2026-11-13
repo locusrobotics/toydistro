@@ -320,6 +320,7 @@ repositories:
   test_meta:
     source:
       type: git
+      test_commits: true
       url: https://github.com/locusrobotics/test_meta.git
       version: master
 type: distribution
