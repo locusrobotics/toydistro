@@ -1,0 +1,25 @@
+name: Tailor Actions pilot
+on:
+  push:
+    branches: ['feature/github-actions-smoke']
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Hosted checks first; other modes require buildfarm credentials/runners
+        type: choice
+        options: [validate, graph, packages, release]
+        default: validate
+permissions:
+  contents: read
+jobs:
+  tailor:
+    uses: locusrobotics/tailor-meta/.github/workflows/distribution.yaml@6c45393d229b7fd65b630fd8a4435cc6f3c65d93
+    with:
+      tailor_meta: 6c45393d229b7fd65b630fd8a4435cc6f3c65d93
+      mode: ${{ inputs.mode || 'validate' }}
+    secrets: inherit
+  smoke:
+    uses: locusrobotics/tailor-meta/.github/workflows/smoke.yaml@6c45393d229b7fd65b630fd8a4435cc6f3c65d93
+    with:
+      tailor_meta: 6c45393d229b7fd65b630fd8a4435cc6f3c65d93
