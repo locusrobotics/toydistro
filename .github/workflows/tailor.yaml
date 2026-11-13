@@ -13,13 +13,23 @@ on:
 permissions:
   contents: read
 jobs:
-  tailor:
-    uses: locusrobotics/tailor-meta/.github/workflows/distribution.yaml@36bc0b98582fa531d6a636c14b13375dee09289a
+  builders:
+    if: github.event_name != 'pull_request'
+    permissions:
+      contents: read
+      packages: write
+    uses: locusrobotics/tailor-meta/.github/workflows/toolchain-images.yaml@e521cb11fafde92060d1bf9632e9899e3048d55f
     with:
-      tailor_meta: 36bc0b98582fa531d6a636c14b13375dee09289a
+      tailor_meta: e521cb11fafde92060d1bf9632e9899e3048d55f
+  ci:
+    uses: locusrobotics/tailor-meta/.github/workflows/ci.yaml@e521cb11fafde92060d1bf9632e9899e3048d55f
+    with:
+      tailor_meta: e521cb11fafde92060d1bf9632e9899e3048d55f
+  tailor:
+    if: github.event_name == 'workflow_dispatch' && inputs.mode != 'validate'
+    needs: builders
+    uses: locusrobotics/tailor-meta/.github/workflows/distribution.yaml@e521cb11fafde92060d1bf9632e9899e3048d55f
+    with:
+      tailor_meta: e521cb11fafde92060d1bf9632e9899e3048d55f
       mode: ${{ inputs.mode || 'validate' }}
     secrets: inherit
-  smoke:
-    uses: locusrobotics/tailor-meta/.github/workflows/smoke.yaml@36bc0b98582fa531d6a636c14b13375dee09289a
-    with:
-      tailor_meta: 36bc0b98582fa531d6a636c14b13375dee09289a
