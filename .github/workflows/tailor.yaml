@@ -14,12 +14,12 @@ permissions:
   contents: read
 jobs:
   tailor:
-    uses: locusrobotics/tailor-meta/.github/workflows/distribution.yaml@6c45393d229b7fd65b630fd8a4435cc6f3c65d93
+    uses: locusrobotics/tailor-meta/.github/workflows/distribution.yaml@36bc0b98582fa531d6a636c14b13375dee09289a
     with:
-      tailor_meta: 6c45393d229b7fd65b630fd8a4435cc6f3c65d93
+      tailor_meta: 36bc0b98582fa531d6a636c14b13375dee09289a
       mode: ${{ inputs.mode || 'validate' }}
     secrets: inherit
   smoke:
-    uses: locusrobotics/tailor-meta/.github/workflows/smoke.yaml@6c45393d229b7fd65b630fd8a4435cc6f3c65d93
+    uses: locusrobotics/tailor-meta/.github/workflows/smoke.yaml@36bc0b98582fa531d6a636c14b13375dee09289a
     with:
-      tailor_meta: 6c45393d229b7fd65b630fd8a4435cc6f3c65d93
+      tailor_meta: 36bc0b98582fa531d6a636c14b13375dee09289a
